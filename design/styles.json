@@ -1,0 +1,2736 @@
+[
+  {
+    "description": "",
+    "id": "477:1069",
+    "name": "Dark Blue",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.42352941632270813,
+          "g": 0.24882352352142334,
+          "r": 0.16941174864768982
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "632:1353",
+    "name": "Primary/Color-1",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.9791666865348816,
+          "g": 0.3329167366027832,
+          "r": 0.2611110806465149
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "632:1774",
+    "name": "Black/950",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.07289168983697891,
+          "g": 0.035990163683891296,
+          "r": 0.021639563143253326
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "648:407",
+    "name": "Shade/Black",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.062745101749897,
+          "g": 0.0313725508749485,
+          "r": 0.019607843831181526
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "648:408",
+    "name": "Tittle/Header/LG/Regular",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 96.0,
+      "font_style": "Regular",
+      "letter_spacing": {
+        "unit": "pixels",
+        "value": -0.20000000298023224
+      },
+      "line_height": {
+        "unit": "pixels",
+        "value": 100.0
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "You use if for desktop grid, this one using 12 grid system",
+    "grids": [
+      {
+        "align": "stretch",
+        "color": {
+          "a": 0.10000000149011612,
+          "b": 0.0,
+          "g": 0.0,
+          "r": 0.0
+        },
+        "count": 12,
+        "gutter": 20.0,
+        "kind": "columns",
+        "offset": 20.0,
+        "size": 10.0,
+        "visible": true
+      }
+    ],
+    "id": "51:100",
+    "name": "Desktop",
+    "type": "grid"
+  },
+  {
+    "description": "",
+    "id": "430:17",
+    "name": "Header/XL",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Gloock",
+      "font_size": 128.0,
+      "font_style": "Regular",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 120.00000476837158
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "430:18",
+    "name": "Header/LG",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Gloock",
+      "font_size": 96.0,
+      "font_style": "Regular",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 120.00000476837158
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "430:19",
+    "name": "Header/MD",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Gloock",
+      "font_size": 64.0,
+      "font_style": "Regular",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 2.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 120.00000476837158
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "430:20",
+    "name": "Header/SM",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Gloock",
+      "font_size": 48.0,
+      "font_style": "Regular",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 2.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 120.00000476837158
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "430:21",
+    "name": "Header/XS",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Gloock",
+      "font_size": 32.0,
+      "font_style": "Regular",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 2.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 120.00000476837158
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:254",
+    "name": "Body/XL/Bold",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 48.0,
+      "font_style": "Bold",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 139.9999976158142
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:255",
+    "name": "Body/XL/Semibold",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 48.0,
+      "font_style": "Semi Bold",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 139.9999976158142
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:256",
+    "name": "Body/XL/Regular",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 48.0,
+      "font_style": "Regular",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 139.9999976158142
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:257",
+    "name": "Body/XL/Light",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 48.0,
+      "font_style": "Light",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 139.9999976158142
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:258",
+    "name": "Body/XL/Extralight",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 48.0,
+      "font_style": "Extra Light",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 139.9999976158142
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:259",
+    "name": "Body/LG/Bold",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 32.0,
+      "font_style": "Bold",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 160.0000023841858
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:260",
+    "name": "Body/LG/Semibold",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 32.0,
+      "font_style": "Semi Bold",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 160.0000023841858
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:261",
+    "name": "Body/LG/Regular",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 32.0,
+      "font_style": "Regular",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 160.0000023841858
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:262",
+    "name": "Body/LG/Light",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 32.0,
+      "font_style": "Light",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 160.0000023841858
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:263",
+    "name": "Body/LG/Extralight",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 32.0,
+      "font_style": "Extra Light",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 160.0000023841858
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:264",
+    "name": "Body/MD/Bold",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 24.0,
+      "font_style": "Bold",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 160.0000023841858
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:265",
+    "name": "Body/MD/Semibold",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 24.0,
+      "font_style": "Semi Bold",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 160.0000023841858
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:266",
+    "name": "Body/MD/Regular",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 24.0,
+      "font_style": "Regular",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 160.0000023841858
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:267",
+    "name": "Body/MD/Light",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 24.0,
+      "font_style": "Light",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 160.0000023841858
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:268",
+    "name": "Body/MD/Extralight",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 24.0,
+      "font_style": "Extra Light",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 160.0000023841858
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:269",
+    "name": "Body/SM/Bold",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 16.0,
+      "font_style": "Bold",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 179.99999523162842
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:271",
+    "name": "Body/SM/Semibold",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 16.0,
+      "font_style": "Semi Bold",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 179.99999523162842
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:272",
+    "name": "Body/SM/Regular",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 16.0,
+      "font_style": "Regular",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 179.99999523162842
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:273",
+    "name": "Body/SM/Light",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 16.0,
+      "font_style": "Light",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 179.99999523162842
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:274",
+    "name": "Body/SM/Extralight",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 16.0,
+      "font_style": "Extra Light",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 179.99999523162842
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:275",
+    "name": "Body/XS/Bold",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 14.0,
+      "font_style": "Bold",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 189.9999976158142
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:276",
+    "name": "Body/XS/Semibold",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 14.0,
+      "font_style": "Semi Bold",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 189.9999976158142
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:277",
+    "name": "Body/XS/Regular",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 14.0,
+      "font_style": "Regular",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 189.9999976158142
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:278",
+    "name": "Body/XS/Light",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 14.0,
+      "font_style": "Light",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 189.9999976158142
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "436:279",
+    "name": "Body/XS/Extralight",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 14.0,
+      "font_style": "Extra Light",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 189.9999976158142
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "648:1907",
+    "name": "Header/XXS",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Gloock",
+      "font_size": 24.0,
+      "font_style": "Regular",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 120.00000476837158
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "650:2918",
+    "name": "Body/XXS/Bold",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 12.0,
+      "font_style": "Bold",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 189.9999976158142
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "650:2919",
+    "name": "Body/XXS/Semibold",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 12.0,
+      "font_style": "Semi Bold",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 189.9999976158142
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "id": "650:2921",
+    "name": "Body/XXS/Regular",
+    "style": {
+      "case": "original",
+      "decoration": "none",
+      "fills": null,
+      "font_family": "Plus Jakarta Sans",
+      "font_size": 12.0,
+      "font_style": "Regular",
+      "letter_spacing": {
+        "unit": "percent",
+        "value": 0.0
+      },
+      "line_height": {
+        "unit": "percent",
+        "value": 189.9999976158142
+      },
+      "link": null
+    },
+    "type": "text"
+  },
+  {
+    "description": "",
+    "grids": [
+      {
+        "align": "stretch",
+        "color": {
+          "a": 0.10000000149011612,
+          "b": 0.0,
+          "g": 0.0,
+          "r": 0.0
+        },
+        "count": 12,
+        "gutter": 20.0,
+        "kind": "columns",
+        "offset": 20.0,
+        "size": 10.0,
+        "visible": true
+      }
+    ],
+    "id": "461:799",
+    "name": "Tablet",
+    "type": "grid"
+  },
+  {
+    "description": "",
+    "grids": [
+      {
+        "align": "stretch",
+        "color": {
+          "a": 0.10000000149011612,
+          "b": 0.0,
+          "g": 0.0,
+          "r": 0.0
+        },
+        "count": 4,
+        "gutter": 20.0,
+        "kind": "columns",
+        "offset": 20.0,
+        "size": 10.0,
+        "visible": true
+      }
+    ],
+    "id": "696:2938",
+    "name": "Mobile",
+    "type": "grid"
+  },
+  {
+    "description": "",
+    "id": "445:325",
+    "name": "Green/50",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.9019607901573181,
+          "g": 1.0,
+          "r": 0.95686274766922
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:326",
+    "name": "Green/100",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.7882353067398071,
+          "g": 0.9960784316062927,
+          "r": 0.9019607901573181
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:327",
+    "name": "Green/200",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.6039215922355652,
+          "g": 0.9882352948188782,
+          "r": 0.8078431487083435
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:328",
+    "name": "Green/300",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.37254902720451355,
+          "g": 0.9686274528503418,
+          "r": 0.6745098233222961
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:329",
+    "name": "Green/400",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.18431372940540314,
+          "g": 0.9254902005195618,
+          "r": 0.5490196347236633
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:330",
+    "name": "Green/500",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.062745101749897,
+          "g": 0.8235294222831726,
+          "r": 0.4274509847164154
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:331",
+    "name": "Green/600",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.0313725508749485,
+          "g": 0.658823549747467,
+          "r": 0.32156863808631897
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:332",
+    "name": "Green/700",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.04313725605607033,
+          "g": 0.501960813999176,
+          "r": 0.24313725531101227
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:333",
+    "name": "Green/800",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.05882352963089943,
+          "g": 0.3960784375667572,
+          "r": 0.20392157137393951
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:334",
+    "name": "Green/900",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.07058823853731155,
+          "g": 0.3333333432674408,
+          "r": 0.18039216101169586
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:335",
+    "name": "Green/950",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.01568627543747425,
+          "g": 0.18431372940540314,
+          "r": 0.08235294371843338
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:393",
+    "name": "Warning/50",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.9137254953384399,
+          "g": 0.9882352948188782,
+          "r": 0.9921568632125854
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:395",
+    "name": "Warning/100",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.772549033164978,
+          "g": 0.9725490212440491,
+          "r": 0.9882352948188782
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:397",
+    "name": "Warning/200",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.5607843399047852,
+          "g": 0.9372549057006836,
+          "r": 0.9764705896377563
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:399",
+    "name": "Warning/300",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.30588236451148987,
+          "g": 0.8745098114013672,
+          "r": 0.9647058844566345
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:401",
+    "name": "Warning/400",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.11764705926179886,
+          "g": 0.7960784435272217,
+          "r": 0.9450980424880981
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:403",
+    "name": "Warning/500",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.062745101749897,
+          "g": 0.6549019813537598,
+          "r": 0.8196078538894653
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:405",
+    "name": "Warning/600",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.0470588244497776,
+          "g": 0.5490196347236633,
+          "r": 0.7607843279838562
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:407",
+    "name": "Warning/700",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.05098039284348488,
+          "g": 0.3960784375667572,
+          "r": 0.6078431606292725
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:409",
+    "name": "Warning/800",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.07450980693101883,
+          "g": 0.3137255012989044,
+          "r": 0.501960813999176
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:411",
+    "name": "Warning/900",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.08627451211214066,
+          "g": 0.2549019753932953,
+          "r": 0.4274509847164154
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:413",
+    "name": "Warning/950",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.0313725508749485,
+          "g": 0.12941177189350128,
+          "r": 0.250980406999588
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:449",
+    "name": "Danger/50",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.9450980424880981,
+          "g": 0.9450980424880981,
+          "r": 1.0
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:451",
+    "name": "Danger/100",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.8784313797950745,
+          "g": 0.8784313797950745,
+          "r": 1.0
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:453",
+    "name": "Danger/200",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.7764706015586853,
+          "g": 0.7764706015586853,
+          "r": 1.0
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:455",
+    "name": "Danger/300",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.6196078658103943,
+          "g": 0.6196078658103943,
+          "r": 1.0
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:457",
+    "name": "Danger/400",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.4000000059604645,
+          "g": 0.4000000059604645,
+          "r": 1.0
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:459",
+    "name": "Danger/500",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.21176470816135406,
+          "g": 0.21176470816135406,
+          "r": 0.9921568632125854
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:461",
+    "name": "Danger/600",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.09019608050584793,
+          "g": 0.09019608050584793,
+          "r": 0.9215686321258545
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:463",
+    "name": "Danger/700",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.062745101749897,
+          "g": 0.062745101749897,
+          "r": 0.8196078538894653
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:465",
+    "name": "Danger/800",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.06666667014360428,
+          "g": 0.06666667014360428,
+          "r": 0.6392157077789307
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:467",
+    "name": "Danger/900",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.08235294371843338,
+          "g": 0.08235294371843338,
+          "r": 0.529411792755127
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:469",
+    "name": "Danger/950",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.019607843831181526,
+          "g": 0.019607843831181526,
+          "r": 0.29019609093666077
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "446:552",
+    "name": "Gray/50",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.9647058844566345,
+          "g": 0.9647058844566345,
+          "r": 0.9647058844566345
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "446:554",
+    "name": "Gray/100",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.9058823585510254,
+          "g": 0.9058823585510254,
+          "r": 0.9058823585510254
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "446:556",
+    "name": "Gray/200",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.8196078538894653,
+          "g": 0.8196078538894653,
+          "r": 0.8196078538894653
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "446:558",
+    "name": "Gray/300",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.6901960968971252,
+          "g": 0.6901960968971252,
+          "r": 0.6901960968971252
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "446:560",
+    "name": "Gray/400",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.5333333611488342,
+          "g": 0.5333333611488342,
+          "r": 0.5333333611488342
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "446:562",
+    "name": "Gray/500",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.4274509847164154,
+          "g": 0.4274509847164154,
+          "r": 0.4274509847164154
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "446:564",
+    "name": "Gray/600",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.364705890417099,
+          "g": 0.364705890417099,
+          "r": 0.364705890417099
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "446:566",
+    "name": "Gray/700",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.30980393290519714,
+          "g": 0.30980393290519714,
+          "r": 0.30980393290519714
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "446:568",
+    "name": "Gray/800",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.2705882489681244,
+          "g": 0.2705882489681244,
+          "r": 0.2705882489681244
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "446:570",
+    "name": "Gray/900",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.239215686917305,
+          "g": 0.239215686917305,
+          "r": 0.239215686917305
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "446:572",
+    "name": "Gray/950",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.06666667014360428,
+          "g": 0.06666667014360428,
+          "r": 0.06666667014360428
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "501:95",
+    "name": "Neutral/White",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 1.0,
+          "g": 1.0,
+          "r": 1.0
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "652:3063",
+    "name": "Neutral/Black",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.05000000074505806,
+          "g": 0.05000000074505806,
+          "r": 0.05000000074505806
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "652:3065",
+    "name": "White Variable/5",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 1.0,
+          "g": 1.0,
+          "r": 1.0
+        },
+        "opacity": 0.05000000074505806,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "652:3067",
+    "name": "White Variable/10",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 1.0,
+          "g": 1.0,
+          "r": 1.0
+        },
+        "opacity": 0.10000000149011612,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "652:3068",
+    "name": "White Variable/20",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 1.0,
+          "g": 1.0,
+          "r": 1.0
+        },
+        "opacity": 0.20000000298023224,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "652:3069",
+    "name": "White Variable/30",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 1.0,
+          "g": 1.0,
+          "r": 1.0
+        },
+        "opacity": 0.30000001192092896,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "652:3070",
+    "name": "White Variable/40",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 1.0,
+          "g": 1.0,
+          "r": 1.0
+        },
+        "opacity": 0.4000000059604645,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "652:3071",
+    "name": "White Variable/50",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 1.0,
+          "g": 1.0,
+          "r": 1.0
+        },
+        "opacity": 0.5,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "653:3072",
+    "name": "White Variable/60",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 1.0,
+          "g": 1.0,
+          "r": 1.0
+        },
+        "opacity": 0.6000000238418579,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "653:3073",
+    "name": "White Variable/70",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 1.0,
+          "g": 1.0,
+          "r": 1.0
+        },
+        "opacity": 0.699999988079071,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "653:3074",
+    "name": "White Variable/80",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 1.0,
+          "g": 1.0,
+          "r": 1.0
+        },
+        "opacity": 0.800000011920929,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "653:3077",
+    "name": "Black Variable/5",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.06666667014360428,
+          "g": 0.06666667014360428,
+          "r": 0.06666667014360428
+        },
+        "opacity": 0.05000000074505806,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "653:3078",
+    "name": "Black Variable/10",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.06666667014360428,
+          "g": 0.06666667014360428,
+          "r": 0.06666667014360428
+        },
+        "opacity": 0.10000000149011612,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "653:3079",
+    "name": "Black Variable/20",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.06666667014360428,
+          "g": 0.06666667014360428,
+          "r": 0.06666667014360428
+        },
+        "opacity": 0.20000000298023224,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "653:3080",
+    "name": "Black Variable/30",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.06666667014360428,
+          "g": 0.06666667014360428,
+          "r": 0.06666667014360428
+        },
+        "opacity": 0.30000001192092896,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "653:3081",
+    "name": "Black Variable/40",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.06666667014360428,
+          "g": 0.06666667014360428,
+          "r": 0.06666667014360428
+        },
+        "opacity": 0.4000000059604645,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "653:3082",
+    "name": "Black Variable/50",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.06666667014360428,
+          "g": 0.06666667014360428,
+          "r": 0.06666667014360428
+        },
+        "opacity": 0.5,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "653:3085",
+    "name": "Black Variable/60",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.06666667014360428,
+          "g": 0.06666667014360428,
+          "r": 0.06666667014360428
+        },
+        "opacity": 0.6000000238418579,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "653:3086",
+    "name": "Black Variable/70",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.06666667014360428,
+          "g": 0.06666667014360428,
+          "r": 0.06666667014360428
+        },
+        "opacity": 0.699999988079071,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "653:3087",
+    "name": "Black Variable/80",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.06666667014360428,
+          "g": 0.06666667014360428,
+          "r": 0.06666667014360428
+        },
+        "opacity": 0.800000011920929,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "654:3088",
+    "name": "Black Variable/90",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.06666667014360428,
+          "g": 0.06666667014360428,
+          "r": 0.06666667014360428
+        },
+        "opacity": 0.8999999761581421,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "696:3022",
+    "name": "White Variable/90",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 1.0,
+          "g": 1.0,
+          "r": 1.0
+        },
+        "opacity": 0.8999999761581421,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "1458:6092",
+    "name": "Blue Zodiac/50",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 1.0,
+          "g": 0.9725490212440491,
+          "r": 0.9333333373069763
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "1458:6093",
+    "name": "Blue Zodiac/100",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 1.0,
+          "g": 0.9333333373069763,
+          "r": 0.8470588326454163
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "1458:6094",
+    "name": "Blue Zodiac/200",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 1.0,
+          "g": 0.8823529481887817,
+          "r": 0.7254902124404907
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "1458:6095",
+    "name": "Blue Zodiac/300",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 1.0,
+          "g": 0.8156862854957581,
+          "r": 0.5372549295425415
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "1458:6096",
+    "name": "Blue Zodiac/400",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 1.0,
+          "g": 0.7098039388656616,
+          "r": 0.32156863808631897
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "1458:6097",
+    "name": "Blue Zodiac/500",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 1.0,
+          "g": 0.5764706134796143,
+          "r": 0.16470588743686676
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "1458:6098",
+    "name": "Blue Zodiac/600",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.9921568632125854,
+          "g": 0.45098039507865906,
+          "r": 0.07450980693101883
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "1458:6099",
+    "name": "Blue Zodiac/700",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.9137254953384399,
+          "g": 0.3607843220233917,
+          "r": 0.0470588244497776
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "1458:6100",
+    "name": "Blue Zodiac/800",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.7372549176216125,
+          "g": 0.29019609093666077,
+          "r": 0.06666667014360428
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "1458:6101",
+    "name": "Blue Zodiac/900",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.5803921818733215,
+          "g": 0.25882354378700256,
+          "r": 0.0784313753247261
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "1458:6102",
+    "name": "Blue Zodiac/950",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.2823529541492462,
+          "g": 0.12941177189350128,
+          "r": 0.054901961237192154
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "118:68",
+    "name": "Cod Gray/200",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.8196078538894653,
+          "g": 0.8196078538894653,
+          "r": 0.8196078538894653
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:337",
+    "name": "Atlantis/50",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.9019607901573181,
+          "g": 1.0,
+          "r": 0.95686274766922
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:339",
+    "name": "Atlantis/100",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.7882353067398071,
+          "g": 0.9960784316062927,
+          "r": 0.9019607901573181
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:341",
+    "name": "Atlantis/200",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.6039215922355652,
+          "g": 0.9882352948188782,
+          "r": 0.8078431487083435
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:343",
+    "name": "Atlantis/300",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.37254902720451355,
+          "g": 0.9686274528503418,
+          "r": 0.6745098233222961
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:345",
+    "name": "Atlantis/400",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.18431372940540314,
+          "g": 0.9254902005195618,
+          "r": 0.5490196347236633
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:347",
+    "name": "Atlantis/500",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.062745101749897,
+          "g": 0.8235294222831726,
+          "r": 0.4274509847164154
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:349",
+    "name": "Atlantis/600",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.0313725508749485,
+          "g": 0.658823549747467,
+          "r": 0.32156863808631897
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:351",
+    "name": "Atlantis/700",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.04313725605607033,
+          "g": 0.501960813999176,
+          "r": 0.24313725531101227
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:353",
+    "name": "Atlantis/800",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.05882352963089943,
+          "g": 0.3960784375667572,
+          "r": 0.20392157137393951
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:355",
+    "name": "Atlantis/900",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.07058823853731155,
+          "g": 0.3333333432674408,
+          "r": 0.18039216101169586
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  },
+  {
+    "description": "",
+    "id": "445:357",
+    "name": "Atlantis/950",
+    "paints": [
+      {
+        "blend": "normal",
+        "color": {
+          "a": 1.0,
+          "b": 0.01568627543747425,
+          "g": 0.18431372940540314,
+          "r": 0.08235294371843338
+        },
+        "opacity": 1.0,
+        "type": "solid",
+        "visible": true
+      }
+    ],
+    "type": "paint"
+  }
+]

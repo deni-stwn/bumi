@@ -1,0 +1,15 @@
+{
+  "widths": [1440, 768, 425],
+  "routes": [
+    "/",
+    "/about",
+    "/properties",
+    "/properties/search",
+    "/properties/villa-brick-garage",
+    "/services",
+    "/services/property-management",
+    "/services/investment-opportunities",
+    "/services/real-estate-consultation",
+    "/does-not-exist"
+  ]
+}

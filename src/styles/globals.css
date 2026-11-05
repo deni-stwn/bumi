@@ -1,0 +1,202 @@
+@import 'tailwindcss';
+@import './tokens.css';
+
+/* Fonts from file.fontReport (High-Fidelity pages only): Gloock for headings, Plus Jakarta Sans for
+   body copy, Alexandria and Afacad for the few layers the design sets in them. */
+@import '@fontsource/gloock/400.css';
+@import '@fontsource-variable/plus-jakarta-sans/wght.css';
+@import '@fontsource-variable/alexandria/wght.css';
+@import '@fontsource-variable/afacad/wght.css';
+
+/* Families used on layers without a text style, so build-tokens.mjs cannot see them. */
+@theme {
+  --font-alexandria: 'Alexandria Variable', 'Alexandria', ui-sans-serif, system-ui, sans-serif;
+  --font-afacad: 'Afacad Variable', 'Afacad', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Layout grid (grid styles Desktop/Tablet: 12 columns, Mobile: 4 columns; gutter and margin 20 px). */
+@theme {
+  --spacing-gutter: 1.25rem; /* 20 px: grid gutter and outer margin */
+}
+
+/* Corner-mode variable, mode "Rounded" (S 4, M 8, L 16). tokens.css also emits --radius-s/m/l, but
+   their default mode "Squere" is 0 and the names clash with Tailwind's side utilities (rounded-s, rounded-l),
+   so components use these. The design resolves the mode per frame: use a radius only where the frame
+   renders one (see design-notes G17). */
+@theme {
+  --radius-corner-s: 0.25rem;
+  --radius-corner-m: 0.5rem;
+  --radius-corner-l: 1rem;
+}
+
+/* "Lets Talk !" footer wordmark: Gloock 298.67 / 158 / 87.47 px at the 1440 / 768 / 425 frames
+   (20.74 % / 20.57 % / 20.58 % of the frame width), so it scales with the viewport like the design. */
+@theme {
+  --text-wordmark: 20.58vw;
+  --text-wordmark-lg: 20.74vw;
+}
+
+/* Service numbers on /services ("01"–"03"): Gloock 248 px on desktop, 128 px on tablet and mobile, a
+   text layer without a text style (design-notes SV1). Trimmed to cap height, so the line height only
+   matters for wrapping, which a two-digit number never does. */
+@theme {
+  --text-numeral: 8rem;
+  --text-numeral--line-height: 1;
+  --text-numeral-lg: 15.5rem;
+  --text-numeral-lg--line-height: 1;
+}
+
+/* Real Estate Consultation CTA on desktop: Gloock 108 / 110 % (119 px, design-notes G24), a text layer
+   without a text style (design-notes RC5). */
+@theme {
+  --text-display: 6.75rem;
+  --text-display--line-height: 7.4375rem;
+}
+
+/* FigCraft's default stroke colour, on one loose line of the Consultation page (design-notes RC6); not a
+   paint style. */
+@theme {
+  --color-default-stroke: #d9d9d9;
+}
+
+/* Search capsule on hero photos: background blur 34 in FigCraft = CSS blur(17px). */
+@theme {
+  --blur-search: 17px;
+}
+
+/* Effect on the Home testimonials frame (drop shadow 0 4 blur 4, black 25 %), not an effect style. */
+@theme {
+  --drop-shadow-section: 0 4px 4px rgb(0 0 0 / 0.25);
+}
+
+/* Motion tokens (bukan dari desain): kurva yang sama dengan GSAP di src/lib/motion.ts. */
+@theme {
+  --ease-house: cubic-bezier(0.76, 0, 0.24, 1);
+  --ease-house-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    /* FigCraft breaks a word that is wider than its text box ("managemen / t?"); browsers would let
+       it overflow. Only words that don't fit are affected, so layouts are otherwise unchanged. */
+    overflow-wrap: break-word;
+    color: var(--color-gray-950);
+    background-color: var(--color-neutral-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* FigCraft trims 91 % of the design's text boxes to cap height (leading trim "capHeight"); layout
+     heights only match with the same trim. Browsers without text-box support show slightly taller text. */
+  :where(
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    li,
+    dt,
+    dd,
+    label,
+    legend,
+    blockquote,
+    figcaption,
+    a,
+    button,
+    span,
+    td,
+    th,
+    time,
+    small,
+    strong,
+    input,
+    select,
+    textarea
+  ) {
+    text-box: trim-both cap alphabetic;
+  }
+
+  /* Divider lines in the design are 0 px tall vectors or strokes, which take no layout space; an hr
+     draws its 1 px border and gives that pixel back (a `mb-*` utility still overrides this). */
+  hr {
+    margin-bottom: -1px;
+  }
+
+  /* One visible focus style for every interactive element (keyboard only). */
+  :focus-visible {
+    /* The design is monochrome and puts text on both white and photos: the text colour is always
+       the high-contrast choice for its own background. */
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
+
+  /* Sections receive focus after an in-page link scrolls to them (like a native anchor jump);
+     they are not controls, so no ring. */
+  [data-scroll-target]:focus {
+    outline: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* Horizontal scrollers (carousels, tab rows) keep native scrolling but hide the bar. */
+@utility scrollbar-none {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* An "inside" divider that takes no layout space (stroke not included in auto layout). */
+@utility divider-inset-b {
+  box-shadow: inset 0 -1px 0 var(--color-gray-300); /* section dividers use Gray/300 */
+}
+
+/* Desktop content starts at grid column 2: margin + one column + gutter
+   (12 columns over the container width minus 2 margins and 11 gutters). Padding percentages resolve
+   against the parent, so the width is capped at the frame like the Container itself. */
+@utility pl-col-2 {
+  padding-left: calc(
+    2 * var(--spacing-gutter) + (min(100%, var(--container-frame)) - 13 * var(--spacing-gutter)) /
+      12
+  );
+}
+
+/* Opt out of the cap-height trim where the design does not trim a text box. */
+@utility text-box-none {
+  text-box: none;
+}
+
+/* Strokes that take no layout space, like FigCraft's center/inside strokes on one side:
+   line-b-gray-300, line-x-gray-100 … (colour from the design tokens). */
+@utility line-b-* {
+  box-shadow: inset 0 -1px 0 --value(--color-*);
+}
+@utility line-t-* {
+  box-shadow: inset 0 1px 0 --value(--color-*);
+}
+@utility line-y-* {
+  box-shadow:
+    inset 0 1px 0 --value(--color-*),
+    inset 0 -1px 0 --value(--color-*);
+}
+@utility line-l-* {
+  box-shadow: inset 1px 0 0 --value(--color-*);
+}
+@utility line-x-* {
+  box-shadow:
+    inset 1px 0 0 --value(--color-*),
+    inset -1px 0 0 --value(--color-*);
+}
