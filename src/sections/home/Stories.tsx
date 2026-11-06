@@ -84,7 +84,7 @@ export function Stories() {
           // The trailing space lets every story, the last one too, scroll to the start edge and
           // become the current one (track width − card − gap; design-notes H20).
           className={cn(
-            '-mr-gutter scrollbar-none flex snap-x gap-17.5 self-stretch overflow-x-auto pr-gutter lg:gap-25',
+            '-mr-gutter scrollbar-none flex snap-x gap-17.5 self-stretch overflow-x-auto overflow-y-hidden pr-gutter lg:gap-25',
             "after:hidden after:shrink-0 after:content-[''] md:after:block md:after:w-[calc(100%-40.125rem)] lg:after:w-[calc(100%-42rem)]",
           )}
         >

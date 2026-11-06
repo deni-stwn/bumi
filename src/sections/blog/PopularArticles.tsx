@@ -36,7 +36,7 @@ export function PopularArticles() {
       <ul
         ref={track}
         data-reveal="stagger"
-        className="grid gap-y-8 md:grid-cols-2 md:gap-y-12 lg:-mr-gutter lg:scrollbar-none lg:flex lg:snap-x lg:overflow-x-auto"
+        className="grid gap-y-8 md:grid-cols-2 md:gap-y-12 lg:-mr-gutter lg:scrollbar-none lg:flex lg:snap-x lg:overflow-x-auto lg:overflow-y-hidden"
       >
         {popularArticles.map((article) => (
           <li key={article.slug} className="lg:w-88.75 lg:shrink-0 lg:snap-start">

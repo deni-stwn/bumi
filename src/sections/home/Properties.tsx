@@ -39,7 +39,7 @@ export function Properties() {
             value={filter}
             onChange={setFilter}
             panelId={panelId}
-            className="-mr-gutter scrollbar-none overflow-x-auto pr-gutter md:mr-0 md:pr-0"
+            className="-mr-gutter scrollbar-none overflow-x-auto overflow-y-hidden pr-gutter md:mr-0 md:pr-0"
           />
         </div>
 

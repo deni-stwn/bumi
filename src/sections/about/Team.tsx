@@ -54,7 +54,7 @@ export function Team() {
           // oxlint-disable-next-line jsx-a11y/no-noninteractive-tabindex -- a scroller with no focusable content must be keyboard reachable (WCAG 2.1.1)
           tabIndex={0}
           aria-label="Team members"
-          className="-mr-gutter scrollbar-none flex snap-x gap-5 overflow-x-auto pr-gutter lg:mr-0 lg:grid lg:grid-cols-11 lg:gap-x-5 lg:gap-y-50 lg:overflow-visible lg:pr-0"
+          className="-mr-gutter scrollbar-none flex snap-x gap-5 overflow-x-auto overflow-y-hidden pr-gutter lg:mr-0 lg:grid lg:grid-cols-11 lg:gap-x-5 lg:gap-y-50 lg:overflow-visible lg:pr-0"
         >
           <ul aria-label="Team" data-reveal="stagger" className={row}>
             {team.slice(0, 2).map((m) => (

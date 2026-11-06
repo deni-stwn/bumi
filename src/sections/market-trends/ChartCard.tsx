@@ -99,7 +99,9 @@ export function ChartCard({ chart, layout, ...shell }: ChartCardProps) {
         tabIndex={notesScroll ? 0 : undefined}
         role={notesScroll ? 'group' : undefined}
         aria-label={notesScroll ? 'Notes, scroll sideways' : undefined}
-        className={cn(n.nowrap && n.left >= 0 && 'scrollbar-none overflow-x-auto')}
+        className={cn(
+          n.nowrap && n.left >= 0 && 'scrollbar-none overflow-x-auto overflow-y-hidden',
+        )}
         style={{
           paddingTop: n.top,
           paddingBottom: n.bottom,

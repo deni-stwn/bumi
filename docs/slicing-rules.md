@@ -178,6 +178,8 @@ scripts/          # token, gambar, QA
 - Rentang di antara frame acuan diinterpolasi dengan rapi; layout tidak boleh pecah.
 - Bagian padat boleh baru memakai layout desktop penuh di `xl` kalau `lg` terlalu sempit: deret link navbar, search bar 4 dropdown di hero, baris logo partner, kartu Insights. Catat di `design-notes.md`.
 - Deret yang di mobile melebihi lebar layar (tab filter properti, logo partner, kartu tim, kartu artikel) menjadi **scroll horizontal dengan scroll-snap**, bukan dipotong.
+- **Scroll horizontal tidak boleh menjebak scroll halaman.** Setiap `overflow-x-auto` wajib berpasangan dengan `overflow-y-hidden` (dengan varian yang sama, mis. `md:overflow-x-auto md:overflow-y-hidden`). Tanpa itu browser menjadikan `overflow-y: auto`, dan ekor huruf di bawah baris yang di-trim (8–9 px) membuat elemen bisa digulir vertikal: di Mac seluruh gestur roda/trackpad "terkunci" ke elemen itu sehingga halaman berhenti bergulir sampai kursor keluar. `npm run qa:motion` gagal bila ada elemen seperti ini (`scroll trap`). Scroller vertikal yang memang disengaja diberi `data-scroll-y`.
+- **Interaksi scroll (pin, langkah) mengikuti scroll seketika**: tanpa `scrub` yang tertinggal, tanpa snap yang menarik halaman setelah scroll berhenti, dan tidak pernah menampilkan dua bagian bertumpuk setengah transparan.
 - **Lebar uji wajib**: 360, 425, 768, 1024, 1280, 1440, 1920. Tidak boleh ada horizontal scroll pada halaman.
 - Ukuran tipografi mobile mengikuti frame mobile, bukan versi desktop yang dikecilkan.
 - Di atas 1440 px, konten tetap terpusat (`max-w-frame`); background dan foto full-bleed tetap penuh.
@@ -270,7 +272,7 @@ Aturan:
 - [ ] Lolos semua lebar uji tanpa horizontal scroll (`scrollWidth` = lebar viewport).
 - [ ] Bisa dipakai penuh dengan keyboard, fokus terlihat.
 - [ ] Heading berurutan, landmark ada, semua gambar punya `alt`.
-- [ ] `data-reveal` terpasang dan `npm run qa:motion` lulus.
+- [ ] `data-reveal` terpasang dan `npm run qa:motion` lulus (termasuk tanpa `scroll trap`).
 - [ ] `npm run qa:a11y` lulus (pelanggaran kontras dari design-notes G4 adalah pengecualian yang diketahui).
 - [ ] Tidak ada error atau warning di console.
 - [ ] `npm run lint` dan `npm run build` lulus.

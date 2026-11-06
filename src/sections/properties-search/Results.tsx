@@ -55,7 +55,7 @@ export function Results({ params }: { params: URLSearchParams }) {
             setPage(1)
           }}
           panelId={panelId}
-          className="-mr-gutter mb-8 scrollbar-none overflow-x-auto pr-gutter md:hidden"
+          className="-mr-gutter mb-8 scrollbar-none overflow-x-auto overflow-y-hidden pr-gutter md:hidden"
         />
         <div
           id={panelId}

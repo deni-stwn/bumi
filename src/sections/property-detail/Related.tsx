@@ -47,7 +47,7 @@ export function Related() {
           value={filter}
           onChange={setFilter}
           panelId={panelId}
-          className="-mr-gutter scrollbar-none overflow-x-auto pr-gutter md:mr-0 md:pr-0 xl:hidden"
+          className="-mr-gutter scrollbar-none overflow-x-auto overflow-y-hidden pr-gutter md:mr-0 md:pr-0 xl:hidden"
         />
         <FilterTabs
           label="Property category"

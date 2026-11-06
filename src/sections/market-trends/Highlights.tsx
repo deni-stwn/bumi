@@ -52,7 +52,7 @@ export function Highlights() {
           value={tab}
           onChange={setTab}
           panelId={panelId}
-          className="scrollbar-none overflow-x-auto"
+          className="scrollbar-none overflow-x-auto overflow-y-hidden"
         />
         <div
           id={panelId}

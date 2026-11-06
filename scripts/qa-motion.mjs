@@ -1,6 +1,6 @@
 // Scroll-reveal check of every route at the frame widths in qa.config.json: scrolls each page to the bottom, then fails
-// if any [data-reveal] element is still hidden, keeps inline GSAP styles or a SplitText wrapper, or
-// if the console logged an error or warning. Also prints the page height, which must not change
+// if any [data-reveal] element is still hidden, keeps inline GSAP styles or a SplitText wrapper, if an
+// element traps the scroll (scrolls vertically by itself), or if the console logged an error or warning. Also prints the page height, which must not change
 // with motion on or off (no layout shift).
 // Usage: npm run dev, then: npm run qa:motion [-- http://localhost:5173]
 // Needs Google Chrome installed.
@@ -92,6 +92,20 @@ const findProblems = `(() => {
     }
     if (el.dataset.reveal === 'lines' && el.querySelector(':scope > div > div')) {
       problems.push('SplitText not reverted "' + el.textContent.trim().slice(0, 32) + '"')
+    }
+  }
+  // Scroll traps: an element on the page that scrolls vertically by itself catches the wheel (on a
+  // Mac the whole gesture latches to it), so the page stops scrolling until the pointer leaves it.
+  // A horizontal row with overflow-x: auto gets overflow-y: auto too unless it says hidden, and the
+  // text's descenders below a trimmed line are enough to make it scroll. Intended vertical
+  // scrollers (none on the page so far) would carry data-scroll-y.
+  for (const el of document.body.querySelectorAll('*')) {
+    if (el.closest('[data-scroll-y], dialog')) continue
+    const overflowY = getComputedStyle(el).overflowY
+    if ((overflowY === 'auto' || overflowY === 'scroll') && el.scrollHeight > el.clientHeight) {
+      const name = el.getAttribute('aria-label') || el.className.toString().slice(0, 48)
+      problems.push('scroll trap: ' + el.tagName.toLowerCase() + ' "' + name + '" scrolls ' +
+        (el.scrollHeight - el.clientHeight) + ' px vertically (add overflow-y-hidden)')
     }
   }
   return problems

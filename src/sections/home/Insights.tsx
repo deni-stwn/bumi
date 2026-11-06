@@ -92,7 +92,7 @@ export function Insights() {
         </div>
         <ul
           ref={track}
-          className="-mr-gutter scrollbar-none flex h-136.75 snap-x gap-5 self-stretch overflow-x-auto pr-gutter md:h-170"
+          className="-mr-gutter scrollbar-none flex h-136.75 snap-x gap-5 self-stretch overflow-x-auto overflow-y-hidden pr-gutter md:h-170"
         >
           {insights.map((insight, i) => (
             <InsightCard key={insight.slug} insight={insight} index={i} />

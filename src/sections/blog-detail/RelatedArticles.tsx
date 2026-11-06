@@ -20,7 +20,7 @@ export function RelatedArticles() {
         </h2>
         <ul
           data-reveal="stagger"
-          className="-mr-gutter scrollbar-none flex snap-x items-start gap-5 overflow-x-auto pr-gutter lg:mr-0 lg:grid lg:grid-cols-3 lg:overflow-visible lg:pr-0"
+          className="-mr-gutter scrollbar-none flex snap-x items-start gap-5 overflow-x-auto overflow-y-hidden pr-gutter lg:mr-0 lg:grid lg:grid-cols-3 lg:overflow-visible lg:pr-0"
         >
           {relatedArticles.map((article) => (
             <li key={article.slug} className="w-75 shrink-0 snap-start md:w-104 lg:w-auto">

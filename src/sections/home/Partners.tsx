@@ -26,7 +26,7 @@ export function Partners() {
           tabIndex={0}
           aria-label="Partners"
           data-reveal="stagger"
-          className="-mr-gutter scrollbar-none flex snap-x gap-4.5 self-stretch overflow-x-auto pr-gutter lg:mr-0 lg:grid lg:grid-cols-4 lg:overflow-visible lg:pr-0"
+          className="-mr-gutter scrollbar-none flex snap-x gap-4.5 self-stretch overflow-x-auto overflow-y-hidden pr-gutter lg:mr-0 lg:grid lg:grid-cols-4 lg:overflow-visible lg:pr-0"
         >
           {partners.map(({ name, lines, Logo }) => (
             <li

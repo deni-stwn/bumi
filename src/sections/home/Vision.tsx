@@ -24,7 +24,7 @@ export function Vision() {
         </h2>
         <ul
           data-reveal="stagger"
-          className="flex flex-col self-stretch md:-mr-gutter md:scrollbar-none md:flex-row md:overflow-x-auto md:pr-gutter lg:mr-0 lg:overflow-visible lg:pr-0"
+          className="flex flex-col self-stretch md:-mr-gutter md:scrollbar-none md:flex-row md:overflow-x-auto md:overflow-y-hidden md:pr-gutter lg:mr-0 lg:overflow-visible lg:pr-0"
         >
           {homeServices.map((s) => (
             <li

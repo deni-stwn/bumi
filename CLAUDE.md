@@ -15,6 +15,7 @@ Read and follow [`docs/slicing-rules.md`](docs/slicing-rules.md) before writing 
 - Mobile-first; reference frames are 425 px (base), 768 px (`md`) and 1440 px (`lg`+).
 - One page at a time, each finished against the Definition of Done (section 13 of the rules).
 - Design inconsistencies go in `docs/design-notes.md`; never silently change the design. The FigCraft file is read-only.
+- Horizontal scrollers: `overflow-x-auto` always with `overflow-y-hidden`, or the row traps the page's wheel scroll (qa:motion fails on it).
 - Motion: mark elements with `data-reveal`; `src/lib/useRevealMotion.ts` animates them. No GSAP code in components for reveals, only opacity/transform, and `prefers-reduced-motion` shows everything.
 
 ## Commands
@@ -28,7 +29,7 @@ npm run tokens    # design/variables.css + design/styles.json → src/styles/tok
 npm run images    # src/assets/images/**/*-{sm,lg}.webp → typed index.ts
 npm run qa:shot -- <url> <width> <out.png>   # device-emulated full-page screenshot
 npm run qa:a11y   # axe-core audit of all routes (dev server must be running)
-npm run qa:motion # scroll every route; fail if a reveal is left hidden (dev server must be running)
+npm run qa:motion # scroll every route; fail if a reveal is left hidden or an element traps the scroll (dev server must be running)
 ```
 
 QA a page by screenshotting it at every frame width and comparing it side by side with the FigCraft frame exported at 1×. Page height should be within a few px of the frame.
