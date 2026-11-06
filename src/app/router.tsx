@@ -53,6 +53,11 @@ const pages: RouteObject[] = [
     lazy: async () => ({ Component: (await import('@/pages/MortgageCalculatorPage')).default }),
   },
   {
+    path: 'resources/market-trends',
+    handle: onLight,
+    lazy: async () => ({ Component: (await import('@/pages/MarketTrendsPage')).default }),
+  },
+  {
     // Buyer and Selling Guide; other resource pages get their own static routes, which rank first.
     path: 'resources/:guide',
     handle: onLight,

@@ -1,5 +1,6 @@
 import { useId } from 'react'
 import { Link } from 'react-router'
+import { BulletList } from '@/components/ui/BulletList'
 import type { GuideText, GuideTopic } from '@/data/guides'
 import { cn } from '@/lib/cn'
 
@@ -52,17 +53,11 @@ export function GuideSection({ topic, className }: GuideSectionProps) {
           </p>
         ))}
         {topic.bullets && (
-          <ul>
-            {topic.bullets.map((bullet, i) => (
-              // FigCraft's bullet: a 5 px dot 1 px in, text indented 21 px.
-              <li
-                key={i}
-                className="relative pl-5.25 before:absolute before:top-3.25 before:left-px before:size-1.25 before:rounded-full before:bg-current"
-              >
-                <Runs text={bullet} />
-              </li>
+          <BulletList
+            items={topic.bullets.map((bullet, i) => (
+              <Runs key={i} text={bullet} />
             ))}
-          </ul>
+          />
         )}
         {topic.note && (
           <p>
