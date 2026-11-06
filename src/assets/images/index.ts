@@ -43,6 +43,10 @@ import heroPropertiesHeroMobile_sm from './hero/properties-hero-mobile-sm.webp'
 import heroPropertiesHeroMobile_lg from './hero/properties-hero-mobile-lg.webp'
 import heroPropertyDetailHero_sm from './hero/property-detail-hero-sm.webp'
 import heroPropertyDetailHero_lg from './hero/property-detail-hero-lg.webp'
+import heroResourcesHero_sm from './hero/resources-hero-sm.webp'
+import heroResourcesHero_lg from './hero/resources-hero-lg.webp'
+import heroResourcesHeroPortrait_sm from './hero/resources-hero-portrait-sm.webp'
+import heroResourcesHeroPortrait_lg from './hero/resources-hero-portrait-lg.webp'
 import investmentCommercialAdvisor_sm from './investment/commercial-advisor-sm.webp'
 import investmentCommercialAdvisor_lg from './investment/commercial-advisor-lg.webp'
 import investmentCommercialBuilding_sm from './investment/commercial-building-sm.webp'
@@ -145,6 +149,8 @@ export const images = {
   heroPropertiesHero: { src: heroPropertiesHero_lg, srcSet: `${heroPropertiesHero_sm} 800w, ${heroPropertiesHero_lg} 1440w`, width: 1440, height: 810 },
   heroPropertiesHeroMobile: { src: heroPropertiesHeroMobile_lg, srcSet: `${heroPropertiesHeroMobile_sm} 400w, ${heroPropertiesHeroMobile_lg} 734w`, width: 734, height: 1619 },
   heroPropertyDetailHero: { src: heroPropertyDetailHero_lg, srcSet: `${heroPropertyDetailHero_sm} 800w, ${heroPropertyDetailHero_lg} 1440w`, width: 1440, height: 960 },
+  heroResourcesHero: { src: heroResourcesHero_lg, srcSet: `${heroResourcesHero_sm} 800w, ${heroResourcesHero_lg} 1440w`, width: 1440, height: 1023 },
+  heroResourcesHeroPortrait: { src: heroResourcesHeroPortrait_lg, srcSet: `${heroResourcesHeroPortrait_sm} 773w, ${heroResourcesHeroPortrait_lg} 1255w`, width: 1255, height: 1300 },
   investmentCommercialAdvisor: { src: investmentCommercialAdvisor_lg, srcSet: `${investmentCommercialAdvisor_sm} 480w, ${investmentCommercialAdvisor_lg} 552w`, width: 552, height: 828 },
   investmentCommercialBuilding: { src: investmentCommercialBuilding_lg, srcSet: `${investmentCommercialBuilding_sm} 480w, ${investmentCommercialBuilding_lg} 552w`, width: 552, height: 828 },
   investmentCommercialTicker: { src: investmentCommercialTicker_lg, srcSet: `${investmentCommercialTicker_sm} 480w, ${investmentCommercialTicker_lg} 828w`, width: 828, height: 621 },

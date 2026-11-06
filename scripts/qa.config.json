@@ -10,6 +10,7 @@
     "/services/property-management",
     "/services/investment-opportunities",
     "/services/real-estate-consultation",
+    "/resources",
     "/does-not-exist"
   ]
 }
