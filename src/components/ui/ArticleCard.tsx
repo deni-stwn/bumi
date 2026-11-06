@@ -19,7 +19,12 @@ export type ArticleCardData = {
 type ArticleCardProps = ArticleCardData &
   ComponentProps<'article'> & {
     variant?: 'feature' | 'compact'
+    /** Radius and size of the 329 px image box. */
     imageClassName?: string
+    /** `sizes` for the image's srcset. */
+    imageSizes?: string
+    /** The title's box when it is narrower or wider than the card (as drawn). */
+    titleClassName?: string
   }
 
 export function ArticleCard({
@@ -31,11 +36,16 @@ export function ArticleCard({
   image,
   alt = '',
   imageClassName,
+  imageSizes = '(min-width: 1024px) 30vw, 100vw',
+  titleClassName,
   className,
   ...props
 }: ArticleCardProps) {
+  // FigCraft measures text a hair wider than browsers: on mobile two titles fill their box to within
+  // 0.1 px and wrap one word earlier in the frames. One pixel less keeps those line breaks (BL6).
+  const heading = cn('text-body-md-semibold text-gray-950 max-md:pr-px', titleClassName)
   const link = (
-    <Link to={`/blog/${slug}`} className="after:absolute after:inset-0">
+    <Link to={`/blog/${slug}`} className="after:absolute after:inset-0 hover:underline">
       {title}
     </Link>
   )
@@ -48,7 +58,7 @@ export function ArticleCard({
         )}
         {...props}
       >
-        <h3 className="text-body-md-semibold text-gray-950">{link}</h3>
+        <h3 className={heading}>{link}</h3>
         <p className="text-body-xs-regular text-gray-300" data-design-contrast>
           {readTime}
         </p>
@@ -62,7 +72,7 @@ export function ArticleCard({
           <img
             src={image.src}
             srcSet={image.srcSet}
-            sizes="(min-width: 1024px) 30vw, 100vw"
+            sizes={imageSizes}
             width={image.width}
             height={image.height}
             alt={alt}
@@ -72,11 +82,19 @@ export function ArticleCard({
         </div>
       ) : null}
       <div className="flex flex-col gap-6">
-        <h3 className="text-body-md-semibold text-gray-950">{link}</h3>
+        <h3 className={heading}>{link}</h3>
         {excerpt ? (
-          <p className="line-clamp-3 text-body-xs-regular text-gray-400" data-design-contrast>
-            {excerpt}
-          </p>
+          // A fixed 396 × 80 text box that ends in an ellipsis after three lines (News, large); the
+          // box keeps its height, the clamped text inside stops at the third line.
+          <div className="h-20 w-99 max-w-[calc(100%+0.6875rem)]">
+            {/* 4 px inside the clip below the trimmed last line keep its descenders. */}
+            <p
+              className="-mb-1 line-clamp-3 pb-1 text-body-xs-regular text-gray-400"
+              data-design-contrast
+            >
+              {excerpt}
+            </p>
+          </div>
         ) : null}
         <p className="text-body-xs-regular text-gray-400" data-design-contrast>
           {readTime}

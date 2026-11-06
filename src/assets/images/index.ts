@@ -3,10 +3,26 @@ import aboutConsultationClients_sm from './about/consultation-clients-sm.webp'
 import aboutConsultationClients_lg from './about/consultation-clients-lg.webp'
 import articlesAerialRoundabout_sm from './articles/aerial-roundabout-sm.webp'
 import articlesAerialRoundabout_lg from './articles/aerial-roundabout-lg.webp'
+import articlesBanknotes_sm from './articles/banknotes-sm.webp'
+import articlesBanknotes_lg from './articles/banknotes-lg.webp'
+import articlesBookOnBed_sm from './articles/book-on-bed-sm.webp'
+import articlesBookOnBed_lg from './articles/book-on-bed-lg.webp'
+import articlesChessPieces_sm from './articles/chess-pieces-sm.webp'
+import articlesChessPieces_lg from './articles/chess-pieces-lg.webp'
+import articlesCityAerial_sm from './articles/city-aerial-sm.webp'
+import articlesCityAerial_lg from './articles/city-aerial-lg.webp'
 import articlesGlassTower_sm from './articles/glass-tower-sm.webp'
 import articlesGlassTower_lg from './articles/glass-tower-lg.webp'
+import articlesHarbourNight_sm from './articles/harbour-night-sm.webp'
+import articlesHarbourNight_lg from './articles/harbour-night-lg.webp'
 import articlesHouseBlueSky_sm from './articles/house-blue-sky-sm.webp'
 import articlesHouseBlueSky_lg from './articles/house-blue-sky-lg.webp'
+import articlesLetterTiles_sm from './articles/letter-tiles-sm.webp'
+import articlesLetterTiles_lg from './articles/letter-tiles-lg.webp'
+import articlesTeamMeeting_sm from './articles/team-meeting-sm.webp'
+import articlesTeamMeeting_lg from './articles/team-meeting-lg.webp'
+import articlesWhiteGables_sm from './articles/white-gables-sm.webp'
+import articlesWhiteGables_lg from './articles/white-gables-lg.webp'
 import articlesWhiteKitchen_sm from './articles/white-kitchen-sm.webp'
 import articlesWhiteKitchen_lg from './articles/white-kitchen-lg.webp'
 import consultationMarketTicker_sm from './consultation/market-ticker-sm.webp'
@@ -31,6 +47,10 @@ import heroAboutHeroFull_sm from './hero/about-hero-full-sm.webp'
 import heroAboutHeroFull_lg from './hero/about-hero-full-lg.webp'
 import heroAboutHeroWide_sm from './hero/about-hero-wide-sm.webp'
 import heroAboutHeroWide_lg from './hero/about-hero-wide-lg.webp'
+import heroBlogHero_sm from './hero/blog-hero-sm.webp'
+import heroBlogHero_lg from './hero/blog-hero-lg.webp'
+import heroBlogHeroPortrait_sm from './hero/blog-hero-portrait-sm.webp'
+import heroBlogHeroPortrait_lg from './hero/blog-hero-portrait-lg.webp'
 import heroHomeHeroDesktop_sm from './hero/home-hero-desktop-sm.webp'
 import heroHomeHeroDesktop_lg from './hero/home-hero-desktop-lg.webp'
 import heroHomeHeroMobile_sm from './hero/home-hero-mobile-sm.webp'
@@ -129,8 +149,16 @@ export type ImageAsset = { src: string; srcSet: string; width: number; height: n
 export const images = {
   aboutConsultationClients: { src: aboutConsultationClients_lg, srcSet: `${aboutConsultationClients_sm} 800w, ${aboutConsultationClients_lg} 1380w`, width: 1380, height: 920 },
   articlesAerialRoundabout: { src: articlesAerialRoundabout_lg, srcSet: `${articlesAerialRoundabout_sm} 800w, ${articlesAerialRoundabout_lg} 1143w`, width: 1143, height: 812 },
+  articlesBanknotes: { src: articlesBanknotes_lg, srcSet: `${articlesBanknotes_sm} 480w, ${articlesBanknotes_lg} 831w`, width: 831, height: 554 },
+  articlesBookOnBed: { src: articlesBookOnBed_lg, srcSet: `${articlesBookOnBed_sm} 480w, ${articlesBookOnBed_lg} 832w`, width: 832, height: 558 },
+  articlesChessPieces: { src: articlesChessPieces_lg, srcSet: `${articlesChessPieces_sm} 800w, ${articlesChessPieces_lg} 1600w`, width: 1600, height: 1067 },
+  articlesCityAerial: { src: articlesCityAerial_lg, srcSet: `${articlesCityAerial_sm} 480w, ${articlesCityAerial_lg} 624w`, width: 624, height: 832 },
   articlesGlassTower: { src: articlesGlassTower_lg, srcSet: `${articlesGlassTower_sm} 480w, ${articlesGlassTower_lg} 511w`, width: 511, height: 681 },
+  articlesHarbourNight: { src: articlesHarbourNight_lg, srcSet: `${articlesHarbourNight_sm} 480w, ${articlesHarbourNight_lg} 832w`, width: 832, height: 519 },
   articlesHouseBlueSky: { src: articlesHouseBlueSky_lg, srcSet: `${articlesHouseBlueSky_sm} 480w, ${articlesHouseBlueSky_lg} 480w`, width: 480, height: 320 },
+  articlesLetterTiles: { src: articlesLetterTiles_lg, srcSet: `${articlesLetterTiles_sm} 480w, ${articlesLetterTiles_lg} 832w`, width: 832, height: 468 },
+  articlesTeamMeeting: { src: articlesTeamMeeting_lg, srcSet: `${articlesTeamMeeting_sm} 480w, ${articlesTeamMeeting_lg} 831w`, width: 831, height: 554 },
+  articlesWhiteGables: { src: articlesWhiteGables_lg, srcSet: `${articlesWhiteGables_sm} 480w, ${articlesWhiteGables_lg} 603w`, width: 603, height: 832 },
   articlesWhiteKitchen: { src: articlesWhiteKitchen_lg, srcSet: `${articlesWhiteKitchen_sm} 480w, ${articlesWhiteKitchen_lg} 480w`, width: 480, height: 320 },
   consultationMarketTicker: { src: consultationMarketTicker_lg, srcSet: `${consultationMarketTicker_sm} 480w, ${consultationMarketTicker_lg} 828w`, width: 828, height: 552 },
   consultationOptionsLivingRoom: { src: consultationOptionsLivingRoom_lg, srcSet: `${consultationOptionsLivingRoom_sm} 800w, ${consultationOptionsLivingRoom_lg} 1617w`, width: 1617, height: 1427 },
@@ -143,6 +171,8 @@ export const images = {
   galleryGreenfieldSkylight: { src: galleryGreenfieldSkylight_lg, srcSet: `${galleryGreenfieldSkylight_sm} 509w, ${galleryGreenfieldSkylight_lg} 509w`, width: 509, height: 905 },
   heroAboutHeroFull: { src: heroAboutHeroFull_lg, srcSet: `${heroAboutHeroFull_sm} 800w, ${heroAboutHeroFull_lg} 1600w`, width: 1600, height: 1060 },
   heroAboutHeroWide: { src: heroAboutHeroWide_lg, srcSet: `${heroAboutHeroWide_sm} 800w, ${heroAboutHeroWide_lg} 1600w`, width: 1600, height: 1069 },
+  heroBlogHero: { src: heroBlogHero_lg, srcSet: `${heroBlogHero_sm} 800w, ${heroBlogHero_lg} 1600w`, width: 1600, height: 1067 },
+  heroBlogHeroPortrait: { src: heroBlogHeroPortrait_lg, srcSet: `${heroBlogHeroPortrait_sm} 636w, ${heroBlogHeroPortrait_lg} 1152w`, width: 1152, height: 1450 },
   heroHomeHeroDesktop: { src: heroHomeHeroDesktop_lg, srcSet: `${heroHomeHeroDesktop_sm} 800w, ${heroHomeHeroDesktop_lg} 1600w`, width: 1600, height: 2071 },
   heroHomeHeroMobile: { src: heroHomeHeroMobile_lg, srcSet: `${heroHomeHeroMobile_sm} 800w, ${heroHomeHeroMobile_lg} 1223w`, width: 1223, height: 2778 },
   heroHomeHeroTablet: { src: heroHomeHeroTablet_lg, srcSet: `${heroHomeHeroTablet_sm} 800w, ${heroHomeHeroTablet_lg} 1600w`, width: 1600, height: 2071 },
