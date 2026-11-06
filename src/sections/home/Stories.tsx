@@ -81,13 +81,19 @@ export function Stories() {
           // oxlint-disable-next-line jsx-a11y/no-noninteractive-tabindex -- a scroller with no focusable content must be keyboard reachable (WCAG 2.1.1)
           tabIndex={0}
           aria-label="Stories"
-          className="-mr-gutter scrollbar-none flex snap-x gap-17.5 self-stretch overflow-x-auto pr-gutter lg:gap-25"
+          // The trailing space lets every story, the last one too, scroll to the start edge and
+          // become the current one (track width − card − gap; design-notes H20).
+          className={cn(
+            '-mr-gutter scrollbar-none flex snap-x gap-17.5 self-stretch overflow-x-auto pr-gutter lg:gap-25',
+            "after:hidden after:shrink-0 after:content-[''] md:after:block md:after:w-[calc(100%-40.125rem)] lg:after:w-[calc(100%-42rem)]",
+          )}
         >
           {testimonials.map((story, i) => (
             <Story key={story.quote} story={story} active={i === index} />
           ))}
         </ul>
-        {/* Slide indicator: the current slide's segment is the long track with a 2 px progress bar. */}
+        {/* Slide indicator: the current slide's segment is the long track with a 2 px progress bar.
+            Segments resize and the bar draws in on the house curve when the slide changes. */}
         <ol aria-label="Slides" className="flex h-7.25 w-full items-center gap-5 lg:h-1.25">
           {testimonials.map((story, i) => {
             const current = i === index
@@ -95,16 +101,19 @@ export function Stories() {
               <li
                 key={story.quote}
                 className={cn(
-                  'relative h-px bg-gray-300',
-                  current ? 'w-71 md:flex-1' : 'flex-1 md:w-24.75 md:flex-none',
+                  'relative h-px bg-gray-300 transition-[flex-grow,flex-basis] duration-700 ease-house',
+                  current
+                    ? 'grow-0 basis-71 md:grow md:basis-0'
+                    : 'grow basis-0 md:grow-0 md:basis-24.75',
                 )}
               >
-                {current && (
-                  <span
-                    aria-hidden="true"
-                    className="absolute -top-px left-0 h-0.5 w-56.5 bg-gray-950 lg:w-111.75"
-                  />
-                )}
+                <span
+                  aria-hidden="true"
+                  className={cn(
+                    'absolute -top-px left-0 h-0.5 w-56.5 origin-left bg-gray-950 transition-transform ease-house lg:w-111.75',
+                    current ? 'scale-x-100 delay-200 duration-1000' : 'scale-x-0 duration-300',
+                  )}
+                />
                 <button
                   type="button"
                   aria-label={`Show story ${i + 1}`}

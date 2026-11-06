@@ -11,9 +11,9 @@ export const mainNav: NavItem[] = [
     // Not designed (design-notes G5): the categories of the property filter.
     children: [
       { label: 'All Properties', to: '/properties' },
-      { label: 'Residential', to: '/properties?type=residential' },
-      { label: 'Commercial', to: '/properties?type=commercial' },
-      { label: 'Vacation', to: '/properties?type=vacation' },
+      { label: 'Residential', to: '/properties?type=residential#listings' },
+      { label: 'Commercial', to: '/properties?type=commercial#listings' },
+      { label: 'Vacation', to: '/properties?type=vacation#listings' },
     ],
   },
   {

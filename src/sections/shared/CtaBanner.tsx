@@ -1,10 +1,12 @@
-import { useId, type ReactNode } from 'react'
+import { useId, useRef, type ReactNode } from 'react'
 import { ArrowUpRightCircleIcon } from '@/components/icons/ArrowUpRightCircleIcon'
 import { ButtonLink } from '@/components/ui/Button'
 import { cn } from '@/lib/cn'
+import { useFollowPointer } from '@/lib/useFollowPointer'
 
 /**
- * "Ready to …" banner: a very light display heading (Gray/100) with a fill button over its middle,
+ * "Ready to …" banner: a very light display heading (Gray/100) with a fill button over its middle
+ * that follows the mouse while it is over the banner,
  * Header/MD / LG / XL at 425 / 768 / 1440. Pages differ in padding and, on Home, in the button's
  * desktop position, so they can be adjusted with `className` / `headingClassName` / `buttonClassName`.
  */
@@ -26,8 +28,12 @@ export function CtaBanner({
   buttonClassName,
 }: CtaBannerProps) {
   const titleId = useId()
+  const area = useRef<HTMLElement>(null)
+  // The button follows the mouse over the banner (revision, design-notes G28).
+  useFollowPointer(area)
   return (
     <section
+      ref={area}
       aria-labelledby={titleId}
       className={cn('relative mx-auto max-w-frame px-gutter py-25 lg:px-20.75 lg:py-50', className)}
     >
@@ -43,6 +49,7 @@ export function CtaBanner({
         {heading}
       </h2>
       <ButtonLink
+        data-follow-pointer
         to={to}
         variant="fill"
         size="md"

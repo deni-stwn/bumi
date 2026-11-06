@@ -1,5 +1,6 @@
 import { images, type ImageAsset } from '@/assets/images'
 import type { ArticleCardData } from '@/components/ui/ArticleCard'
+import { insights } from './home'
 
 /** Blog frames 4351 / 4041 / 4901, copy as designed (placeholder articles). */
 
@@ -93,7 +94,12 @@ export const latestArticles: ArticleCardData[] = [
   },
 ]
 
-export const allArticles = [...popularArticles, ...latestArticles]
+/** Every article a card links to, the Home "Insights and Trends" ones included. */
+export const allArticles: ArticleCardData[] = [
+  ...popularArticles,
+  ...latestArticles,
+  ...insights.map(({ slug, title }) => ({ slug, title, readTime })),
+]
 
 /**
  * Blog Detail frames 4579 / 4250 / 5410: one designed post (placeholder copy). The second and third

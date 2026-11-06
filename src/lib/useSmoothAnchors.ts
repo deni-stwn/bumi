@@ -52,14 +52,15 @@ export function scrollToSection(id: string): boolean {
 /**
  * Smooth scrolling for every in-page link (`#id`, `/#id`, `/contact#enquiry`):
  * - same page: glide to the section;
- * - another page: open it at the top, then glide to the section once it has rendered.
+ * - another page (or the same page with another query, e.g. a listing tab): open it, then glide to
+ *   the section once it has rendered.
  * The hash is written to the URL afterwards (shareable), without a router navigation, because
  * React Router's ScrollRestoration would jump to it instantly.
  */
 export function useSmoothAnchors() {
   const navigate = useNavigate()
-  const { pathname } = useLocation()
-  const pending = useRef<{ pathname: string; id: string } | null>(null)
+  const { pathname, search } = useLocation()
+  const pending = useRef<{ page: string; id: string } | null>(null)
 
   useEffect(() => {
     const onClick = (event: MouseEvent) => {
@@ -76,10 +77,10 @@ export function useSmoothAnchors() {
       // Runs in the capture phase, so React Router's <Link> sees defaultPrevented and stands down
       // (its own onClick, e.g. closing the mobile menu, still runs).
       event.preventDefault()
-      if (url.pathname === window.location.pathname) {
+      if (url.pathname === window.location.pathname && url.search === window.location.search) {
         if (scrollToSection(id)) window.history.replaceState(window.history.state, '', url.hash)
       } else {
-        pending.current = { pathname: url.pathname, id }
+        pending.current = { page: url.pathname + url.search, id }
         void navigate(url.pathname + url.search)
       }
     }
@@ -89,7 +90,7 @@ export function useSmoothAnchors() {
 
   // Arrived on the page the link pointed to (rendered, at the top): let its intro start, then glide.
   useEffect(() => {
-    if (pending.current?.pathname !== pathname) return
+    if (pending.current?.page !== pathname + search) return
     const { id } = pending.current
     pending.current = null
     const timer = window.setTimeout(() => {
@@ -98,5 +99,5 @@ export function useSmoothAnchors() {
       }
     }, 250)
     return () => window.clearTimeout(timer)
-  }, [pathname])
+  }, [pathname, search])
 }

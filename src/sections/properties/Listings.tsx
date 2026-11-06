@@ -14,10 +14,16 @@ type Filter = (typeof homeFilters)[number]['value']
  * "View more residential". Below: the "/ All / …" filter (default All), radius 8 and "Learn More",
  * like the tablet and mobile frames. Each tab row keeps its own selection, as each frame shows its own default.
  */
-export function Listings() {
+type ListingsProps = {
+  /** A category to open on (the navbar's Residential / Commercial / Vacation links, `?type=`). */
+  initialType?: string | null
+}
+
+export function Listings({ initialType }: ListingsProps) {
   const wide = useMediaQuery('(min-width: 1280px)')
-  const [category, setCategory] = useState<PropertyCategory>('residential')
-  const [filter, setFilter] = useState<Filter>('all')
+  const start = categoryTabs.find((c) => c.value === initialType)?.value
+  const [category, setCategory] = useState<PropertyCategory>(start ?? 'residential')
+  const [filter, setFilter] = useState<Filter>(start ?? 'all')
   const panelId = useId()
   const titleId = useId()
   const active = wide ? category : filter
@@ -27,7 +33,7 @@ export function Listings() {
   const categoryLabel = categoryTabs.find((c) => c.value === category)?.label.toLowerCase()
 
   return (
-    <section aria-labelledby={titleId}>
+    <section id="listings" aria-labelledby={titleId}>
       <Container className="flex flex-col py-25 md:pl-20.5 lg:pl-col-2 xl:py-50">
         {/* The design shows no heading here; one is needed for the outline (h1 → h2 → card h3). */}
         <h2 id={titleId} className="sr-only">

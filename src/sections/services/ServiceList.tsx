@@ -1,10 +1,11 @@
-import { useId } from 'react'
+import { useId, useRef } from 'react'
 import { ArrowUpRightCircleIcon } from '@/components/icons/ArrowUpRightCircleIcon'
 import { DotIcon } from '@/components/icons/DotIcon'
 import { Container } from '@/components/layout/Container'
 import { ButtonLink } from '@/components/ui/Button'
 import { cn } from '@/lib/cn'
 import { services, type Service } from '@/data/services'
+import { usePinnedSteps } from '@/lib/usePinnedSteps'
 
 /**
  * The three service blocks are absolute layouts in the frames and differ slightly per service and
@@ -39,7 +40,16 @@ const quirks = [
 function ServiceBlock({ service, quirk }: { service: Service; quirk: (typeof quirks)[number] }) {
   const titleId = useId()
   return (
-    <article aria-labelledby={titleId} className={cn('line-t-gray-200', quirk.block)}>
+    <article
+      data-step
+      aria-labelledby={titleId}
+      className={cn(
+        'bg-neutral-white line-t-gray-200',
+        quirk.block,
+        // Pinned (usePinnedSteps): the blocks share one screen, stacked.
+        'group-data-pinned/steps:absolute group-data-pinned/steps:inset-0 group-data-pinned/steps:h-full',
+      )}
+    >
       <Container className="flex h-full flex-col md:pl-20.5 lg:pl-col-2">
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between">
           <p
@@ -102,9 +112,19 @@ function ServiceBlock({ service, quirk }: { service: Service; quirk: (typeof qui
   )
 }
 
+/**
+ * Scroll-driven from tablet up (revision, design-notes SV12): the section holds one screen while
+ * scrolling swaps 01 → 02 → 03, then the page continues. Where a block does not fit the screen
+ * (mobile, short screens) or with reduced motion, the blocks follow each other as designed.
+ */
+const PIN_QUERY =
+  '(min-width: 1024px) and (min-height: 620px), (min-width: 768px) and (min-height: 960px)'
+
 export function ServiceList() {
+  const root = useRef<HTMLDivElement>(null)
+  usePinnedSteps(root, PIN_QUERY)
   return (
-    <div>
+    <div ref={root} className="group/steps relative data-pinned:h-svh data-pinned:overflow-hidden">
       {services.map((service, i) => (
         <ServiceBlock key={service.slug} service={service} quirk={quirks[i]} />
       ))}
