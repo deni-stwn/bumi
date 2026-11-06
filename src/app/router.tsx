@@ -74,6 +74,11 @@ const pages: RouteObject[] = [
     lazy: async () => ({ Component: (await import('@/pages/BlogDetailPage')).default }),
   },
   {
+    path: 'contact',
+    handle: onLight,
+    lazy: async () => ({ Component: (await import('@/pages/ContactPage')).default }),
+  },
+  {
     path: '*',
     handle: onLight,
     lazy: async () => ({ Component: (await import('@/pages/NotFoundPage')).default }),

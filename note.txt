@@ -1,0 +1,5 @@
+logo di navbar ikut ke scroll
+section/component Stories of Trust, Growth, and Shared Success progressbarnya bug dan slidernya juga
+section/component Ready to Find Your Perfect Property? tombolnya mengikuti kursor
+pada page services pada section yang ada nomor 1 2 3 itu menggunakan scroll seperti viewpot gitu ganti ganti bagian bukan kaya page biasa gunakan scroll event mungkin
+page properties management dan page properties lainnya belom di slicing atau bagaimana
