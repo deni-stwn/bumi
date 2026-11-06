@@ -1,9 +1,9 @@
 import { useParams } from 'react-router'
 import { Container } from '@/components/layout/Container'
 import { guides } from '@/data/guides'
-import { GuideHero } from '@/sections/guide/GuideHero'
 import { GuideSection } from '@/sections/guide/GuideSection'
 import { guideLayouts } from '@/sections/guide/guideLayouts'
+import { PageIntro } from '@/sections/shared/PageIntro'
 import NotFoundPage from './NotFoundPage'
 
 /**
@@ -19,7 +19,7 @@ export default function GuidePage() {
     <>
       <title>{`${guide.name} – Bumi`}</title>
       <meta name="description" content={guide.metaDescription} />
-      <GuideHero title={guide.title} description={guide.description} layout={layout} />
+      <PageIntro title={guide.title} description={guide.description} layout={layout} />
       <Container className="py-25">
         {/* Desktop rows are 1280 px wide against the right margin (x 140 at 1440). Each row has a
             centred stroke above and below, so neighbours share one line. */}

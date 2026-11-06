@@ -14,6 +14,11 @@
   --font-afacad: 'Afacad Variable', 'Afacad', ui-sans-serif, system-ui, sans-serif;
 }
 
+/* Breakpoints (slicing rules §8): `2xl` is the 1440 px desktop frame, not Tailwind's 1536. */
+@theme {
+  --breakpoint-2xl: 90rem;
+}
+
 /* Layout grid (grid styles Desktop/Tablet: 12 columns, Mobile: 4 columns; gutter and margin 20 px). */
 @theme {
   --spacing-gutter: 1.25rem; /* 20 px: grid gutter and outer margin */
