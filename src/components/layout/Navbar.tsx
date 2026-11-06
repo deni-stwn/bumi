@@ -23,9 +23,9 @@ type NavbarProps = {
 /**
  * Navbar: desktop 1440 (components 18553 / 18585, 86 px) with the link row; tablet and mobile
  * (14916 / 14930 / 14944 / 14958, 82 px) with a "Menu" button that opens MobileMenu.
- * The logo (mark + "Bumi.") stays in the top-left corner while the page scrolls (revision, design-notes
- * G27): it sits in a fixed layer laid out like the navbar row, and turns white over photos and dark
- * fills, black elsewhere. The row keeps an empty slot of the logo's size, so nothing moves.
+ * The logo mark stays in the top-left corner while the page scrolls (revision, design-notes G27): it
+ * sits in a fixed layer at its place in the row and turns white over photos and dark fills, black
+ * elsewhere. The "Bumi." wordmark stays in the row and scrolls away with it.
  */
 export function Navbar({ tone, overlay = false, hideOnTablet = false }: NavbarProps) {
   const { pathname } = useLocation()
@@ -44,22 +44,17 @@ export function Navbar({ tone, overlay = false, hideOnTablet = false }: NavbarPr
       )}
     >
       <div className="pointer-events-none fixed inset-x-0 top-0 z-30">
-        <Container
-          layout="full"
-          className="flex items-center gap-5 py-6 lg:grid lg:grid-cols-12 lg:gap-x-gutter"
-        >
+        <Container layout="full" className="flex py-6">
           <Link
             ref={logo}
             to="/"
+            aria-label="Bumi, home"
             className={cn(
-              'pointer-events-auto flex items-center gap-5 transition-colors duration-300 ease-out lg:col-span-2 lg:grid lg:grid-cols-subgrid',
+              'pointer-events-auto transition-colors duration-300 ease-out',
               navTone[surface === 'dark' ? 'onImage' : 'onLight'].brand,
             )}
           >
             <LogoMark className="h-8.5 w-10.5 lg:h-9.5 lg:w-12" />
-            <span className="font-gloock text-header-xxs whitespace-nowrap lg:text-header-xs">
-              Bumi.
-            </span>
           </Link>
         </Container>
       </div>
@@ -67,8 +62,22 @@ export function Navbar({ tone, overlay = false, hideOnTablet = false }: NavbarPr
         layout="full"
         className="flex items-center gap-5 py-6 lg:grid lg:grid-cols-12 lg:gap-x-gutter"
       >
-        {/* The logo's place in the row (it is drawn by the fixed layer above). */}
-        <span aria-hidden="true" className="h-8.5 lg:col-span-2 lg:h-9.5" />
+        {/* The wordmark scrolls with the page; the mark's slot is empty (it is the fixed layer above).
+            The link repeats the mark's, so it is out of the tab order and hidden from screen readers. */}
+        <Link
+          to="/"
+          tabIndex={-1}
+          aria-hidden="true"
+          className={cn(
+            'flex items-center gap-5 lg:col-span-2 lg:grid lg:grid-cols-subgrid',
+            t.brand,
+          )}
+        >
+          <span className="h-8.5 w-10.5 lg:h-9.5 lg:w-12" />
+          <span className="font-gloock text-header-xxs whitespace-nowrap lg:text-header-xs">
+            Bumi.
+          </span>
+        </Link>
 
         <nav
           aria-label="Main"
