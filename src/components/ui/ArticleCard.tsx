@@ -25,6 +25,8 @@ type ArticleCardProps = ArticleCardData &
     imageSizes?: string
     /** The title's box when it is narrower or wider than the card (as drawn). */
     titleClassName?: string
+    /** The excerpt box (396 px by default, as in the News set). */
+    excerptClassName?: string
   }
 
 export function ArticleCard({
@@ -38,6 +40,7 @@ export function ArticleCard({
   imageClassName,
   imageSizes = '(min-width: 1024px) 30vw, 100vw',
   titleClassName,
+  excerptClassName,
   className,
   ...props
 }: ArticleCardProps) {
@@ -86,7 +89,7 @@ export function ArticleCard({
         {excerpt ? (
           // A fixed 396 × 80 text box that ends in an ellipsis after three lines (News, large); the
           // box keeps its height, the clamped text inside stops at the third line.
-          <div className="h-20 w-99 max-w-[calc(100%+0.6875rem)]">
+          <div className={cn('h-20 w-99 max-w-[calc(100%+0.6875rem)]', excerptClassName)}>
             {/* 4 px inside the clip below the trimmed last line keep its descenders. */}
             <p
               className="-mb-1 line-clamp-3 pb-1 text-body-xs-regular text-gray-400"

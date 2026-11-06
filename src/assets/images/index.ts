@@ -13,12 +13,18 @@ import articlesCityAerial_sm from './articles/city-aerial-sm.webp'
 import articlesCityAerial_lg from './articles/city-aerial-lg.webp'
 import articlesGlassTower_sm from './articles/glass-tower-sm.webp'
 import articlesGlassTower_lg from './articles/glass-tower-lg.webp'
+import articlesGoldBars_sm from './articles/gold-bars-sm.webp'
+import articlesGoldBars_lg from './articles/gold-bars-lg.webp'
 import articlesHarbourNight_sm from './articles/harbour-night-sm.webp'
 import articlesHarbourNight_lg from './articles/harbour-night-lg.webp'
 import articlesHouseBlueSky_sm from './articles/house-blue-sky-sm.webp'
 import articlesHouseBlueSky_lg from './articles/house-blue-sky-lg.webp'
+import articlesLaptopSofa_sm from './articles/laptop-sofa-sm.webp'
+import articlesLaptopSofa_lg from './articles/laptop-sofa-lg.webp'
 import articlesLetterTiles_sm from './articles/letter-tiles-sm.webp'
 import articlesLetterTiles_lg from './articles/letter-tiles-lg.webp'
+import articlesMarketDashboard_sm from './articles/market-dashboard-sm.webp'
+import articlesMarketDashboard_lg from './articles/market-dashboard-lg.webp'
 import articlesTeamMeeting_sm from './articles/team-meeting-sm.webp'
 import articlesTeamMeeting_lg from './articles/team-meeting-lg.webp'
 import articlesWhiteGables_sm from './articles/white-gables-sm.webp'
@@ -154,9 +160,12 @@ export const images = {
   articlesChessPieces: { src: articlesChessPieces_lg, srcSet: `${articlesChessPieces_sm} 800w, ${articlesChessPieces_lg} 1600w`, width: 1600, height: 1067 },
   articlesCityAerial: { src: articlesCityAerial_lg, srcSet: `${articlesCityAerial_sm} 480w, ${articlesCityAerial_lg} 624w`, width: 624, height: 832 },
   articlesGlassTower: { src: articlesGlassTower_lg, srcSet: `${articlesGlassTower_sm} 480w, ${articlesGlassTower_lg} 511w`, width: 511, height: 681 },
+  articlesGoldBars: { src: articlesGoldBars_lg, srcSet: `${articlesGoldBars_sm} 800w, ${articlesGoldBars_lg} 1600w`, width: 1600, height: 1067 },
   articlesHarbourNight: { src: articlesHarbourNight_lg, srcSet: `${articlesHarbourNight_sm} 480w, ${articlesHarbourNight_lg} 832w`, width: 832, height: 519 },
   articlesHouseBlueSky: { src: articlesHouseBlueSky_lg, srcSet: `${articlesHouseBlueSky_sm} 480w, ${articlesHouseBlueSky_lg} 480w`, width: 480, height: 320 },
+  articlesLaptopSofa: { src: articlesLaptopSofa_lg, srcSet: `${articlesLaptopSofa_sm} 480w, ${articlesLaptopSofa_lg} 831w`, width: 831, height: 554 },
   articlesLetterTiles: { src: articlesLetterTiles_lg, srcSet: `${articlesLetterTiles_sm} 480w, ${articlesLetterTiles_lg} 832w`, width: 832, height: 468 },
+  articlesMarketDashboard: { src: articlesMarketDashboard_lg, srcSet: `${articlesMarketDashboard_sm} 800w, ${articlesMarketDashboard_lg} 1600w`, width: 1600, height: 1152 },
   articlesTeamMeeting: { src: articlesTeamMeeting_lg, srcSet: `${articlesTeamMeeting_sm} 480w, ${articlesTeamMeeting_lg} 831w`, width: 831, height: 554 },
   articlesWhiteGables: { src: articlesWhiteGables_lg, srcSet: `${articlesWhiteGables_sm} 480w, ${articlesWhiteGables_lg} 603w`, width: 603, height: 832 },
   articlesWhiteKitchen: { src: articlesWhiteKitchen_lg, srcSet: `${articlesWhiteKitchen_sm} 480w, ${articlesWhiteKitchen_lg} 480w`, width: 480, height: 320 },
