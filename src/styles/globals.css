@@ -179,6 +179,17 @@
   text-box: none;
 }
 
+/* One FigCraft text box split into paragraphs and list items: this block trims only its first and last
+   line, and the text inside does not trim itself, so the lines stack at the full line height. Only
+   text-box-trim is switched off inside: text-box-edge is inherited and decides where the block's own
+   trim cuts (text-box: none would reset it to the font's ascent and descent). */
+@utility text-box-cap {
+  text-box: trim-both cap alphabetic;
+  & :where(p, li, a, span, strong) {
+    text-box-trim: none;
+  }
+}
+
 /* Strokes that take no layout space, like FigCraft's center/inside strokes on one side:
    line-b-gray-300, line-x-gray-100 … (colour from the design tokens). */
 @utility line-b-* {
