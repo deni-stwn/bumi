@@ -113,6 +113,20 @@ const buyerGuide: Guide = {
   ],
 }
 
+/**
+ * Selling Guide frames 8321 / 7749 / 10995: only the title differs; the description and every topic
+ * repeat the Buyer Guide copy as designed ("Buying a property…", design-notes SG1).
+ */
+const sellingGuide: Guide = {
+  ...buyerGuide,
+  slug: 'selling-guide',
+  name: 'Selling Guide',
+  metaDescription:
+    'Your ultimate property selling guide: navigate the property market with confidence, every step of the way.',
+  title: 'Your Ultimate Property Selling Guide',
+}
+
 export const guides: Record<string, Guide> = {
   [buyerGuide.slug]: buyerGuide,
+  [sellingGuide.slug]: sellingGuide,
 }
