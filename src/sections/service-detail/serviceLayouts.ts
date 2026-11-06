@@ -4,9 +4,9 @@
  * Content lives in src/data/serviceDetails.ts; this file only holds the classes that differ.
  */
 
-/** One photo card of the highlight block. */
+/** One photo card of the highlight block, by position (the first is the wide, active one). */
 export type HighlightCardLayout = {
-  /** Card size: mobile and tablet heights, desktop width (the first card fills the row). */
+  /** Card size below desktop (desktop widths are the component's: the active card fills the row). */
   card: string
   /** Photo box inside the card: offset and size (some photos overhang their card). */
   photo: string
@@ -82,21 +82,21 @@ export const serviceLayouts: Record<string, ServiceLayout> = {
       list: 'h-320.5 justify-center md:h-auto',
       cards: [
         {
-          card: 'h-102.75 md:h-103.5 lg:min-w-0 lg:flex-1',
+          card: 'h-102.75 md:h-103.5',
           photo: '-top-0.75 right-0 h-103.5 md:top-0',
           caption:
             'right-5 bottom-7.75 left-5 max-w-70 font-gloock text-header-xxs md:right-8 md:bottom-8 md:left-8 md:max-w-120.75 md:text-header-xs',
           sizes: wideSizes,
         },
         {
-          card: 'h-99 md:h-103.5 lg:w-54',
+          card: 'h-99 md:h-103.5',
           photo: '-top-4.5 right-0 h-103.5 md:top-0',
           caption:
             'right-5 bottom-5 left-5 max-w-45.5 text-body-xs-semibold md:bottom-4.5 md:max-w-42.75',
           sizes: narrowSizes,
         },
         {
-          card: 'h-99 md:h-103.5 md:max-lg:overflow-visible lg:w-54.25',
+          card: 'h-99 md:h-103.5 md:max-lg:overflow-visible',
           photo: '-top-4.5 -right-0.5 h-103.5 md:top-0 md:max-lg:-right-0.75 lg:right-0',
           caption:
             'right-3 bottom-4.5 left-3 max-w-44.5 text-body-xs-semibold md:right-5 md:left-5 md:max-w-43.25',
@@ -124,21 +124,21 @@ export const serviceLayouts: Record<string, ServiceLayout> = {
       cards: [
         {
           // 437 px tall below desktop with a 443 px photo 6 px above it (visible on tablet).
-          card: 'h-109.25 md:max-lg:overflow-visible lg:h-103.5 lg:min-w-0 lg:flex-1',
+          card: 'h-109.25 md:max-lg:overflow-visible lg:h-103.5',
           photo: '-top-1.5 right-0 h-110.75 lg:top-0 lg:h-103.5',
           caption:
             'right-5 bottom-7.75 left-5 max-w-82.5 font-gloock text-header-xxs md:right-6.25 md:bottom-6.5 md:left-6.25 md:max-w-98.5 md:text-header-xs lg:right-8 lg:bottom-8.25 lg:left-8 lg:max-w-94.25',
           sizes: wideSizes,
         },
         {
-          card: 'h-103.5 lg:w-54',
+          card: 'h-103.5',
           photo: 'top-0 right-0 h-103.5',
           caption:
             'right-5 bottom-5 left-5 max-w-54.5 text-body-xs-semibold md:bottom-4 md:max-w-42.75',
           sizes: narrowSizes,
         },
         {
-          card: 'h-103.5 md:max-lg:overflow-visible lg:w-54.25',
+          card: 'h-103.5 md:max-lg:overflow-visible',
           photo: 'top-0 -right-0.5 h-103.5 md:max-lg:-right-0.75 lg:right-0',
           caption:
             'right-5 bottom-5 left-5 max-w-43.25 text-body-xs-semibold md:bottom-4.5 md:max-w-43.25',
@@ -168,21 +168,21 @@ export const serviceLayouts: Record<string, ServiceLayout> = {
       // stops 4 px short and the second card is 661 px wide (design-notes RC4).
       cards: [
         {
-          card: 'h-103.5 lg:min-w-0 lg:flex-1',
+          card: 'h-103.5',
           photo: 'top-0 -right-0.75 h-103.5 md:right-1 lg:right-0',
           caption:
             'right-4.5 bottom-7.75 left-5 font-gloock text-header-xxs md:right-8 md:bottom-8 md:left-8 md:max-w-89 md:text-header-xs',
           sizes: wideSizes,
         },
         {
-          card: 'h-103.5 md:max-lg:w-165.25 lg:w-54',
+          card: 'h-103.5 md:max-lg:w-165.25',
           photo: 'top-0 -right-1 h-103.5 md:right-0',
           caption:
             'right-5 bottom-5 left-5 text-body-xs-semibold md:bottom-12.25 md:left-15.25 md:max-w-130.75 lg:bottom-5.5 lg:left-5 lg:max-w-42.75',
           sizes: narrowSizes,
         },
         {
-          card: 'h-103.5 lg:w-54.25',
+          card: 'h-103.5',
           photo: 'top-0 -right-1.25 h-103.5 md:right-0',
           caption:
             'right-5 bottom-5 left-5 text-body-xs-semibold md:bottom-12.25 md:left-15.25 md:max-w-132.5 lg:bottom-5.5 lg:left-5 lg:max-w-43.25',

@@ -75,38 +75,62 @@ import heroResourcesHeroPortrait_sm from './hero/resources-hero-portrait-sm.webp
 import heroResourcesHeroPortrait_lg from './hero/resources-hero-portrait-lg.webp'
 import investmentCommercialAdvisor_sm from './investment/commercial-advisor-sm.webp'
 import investmentCommercialAdvisor_lg from './investment/commercial-advisor-lg.webp'
+import investmentCommercialAdvisorColor_sm from './investment/commercial-advisor-color-sm.webp'
+import investmentCommercialAdvisorColor_lg from './investment/commercial-advisor-color-lg.webp'
 import investmentCommercialBuilding_sm from './investment/commercial-building-sm.webp'
 import investmentCommercialBuilding_lg from './investment/commercial-building-lg.webp'
 import investmentCommercialTicker_sm from './investment/commercial-ticker-sm.webp'
 import investmentCommercialTicker_lg from './investment/commercial-ticker-lg.webp'
+import investmentCommercialTickerColor_sm from './investment/commercial-ticker-color-sm.webp'
+import investmentCommercialTickerColor_lg from './investment/commercial-ticker-color-lg.webp'
 import investmentDevelopmentMeeting_sm from './investment/development-meeting-sm.webp'
 import investmentDevelopmentMeeting_lg from './investment/development-meeting-lg.webp'
+import investmentDevelopmentMeetingColor_sm from './investment/development-meeting-color-sm.webp'
+import investmentDevelopmentMeetingColor_lg from './investment/development-meeting-color-lg.webp'
 import investmentDevelopmentModelHouse_sm from './investment/development-model-house-sm.webp'
 import investmentDevelopmentModelHouse_lg from './investment/development-model-house-lg.webp'
+import investmentDevelopmentModelHouseColor_sm from './investment/development-model-house-color-sm.webp'
+import investmentDevelopmentModelHouseColor_lg from './investment/development-model-house-color-lg.webp'
 import investmentDevelopmentTeam_sm from './investment/development-team-sm.webp'
 import investmentDevelopmentTeam_lg from './investment/development-team-lg.webp'
 import investmentInsightsChart_sm from './investment/insights-chart-sm.webp'
 import investmentInsightsChart_lg from './investment/insights-chart-lg.webp'
+import investmentInsightsChartColor_sm from './investment/insights-chart-color-sm.webp'
+import investmentInsightsChartColor_lg from './investment/insights-chart-color-lg.webp'
 import investmentInsightsExecutive_sm from './investment/insights-executive-sm.webp'
 import investmentInsightsExecutive_lg from './investment/insights-executive-lg.webp'
+import investmentInsightsExecutiveColor_sm from './investment/insights-executive-color-sm.webp'
+import investmentInsightsExecutiveColor_lg from './investment/insights-executive-color-lg.webp'
 import investmentInsightsMeeting_sm from './investment/insights-meeting-sm.webp'
 import investmentInsightsMeeting_lg from './investment/insights-meeting-lg.webp'
 import managementFinanceBridge_sm from './management/finance-bridge-sm.webp'
 import managementFinanceBridge_lg from './management/finance-bridge-lg.webp'
+import managementFinanceBridgeColor_sm from './management/finance-bridge-color-sm.webp'
+import managementFinanceBridgeColor_lg from './management/finance-bridge-color-lg.webp'
 import managementFinanceCall_sm from './management/finance-call-sm.webp'
 import managementFinanceCall_lg from './management/finance-call-lg.webp'
 import managementFinanceDesk_sm from './management/finance-desk-sm.webp'
 import managementFinanceDesk_lg from './management/finance-desk-lg.webp'
+import managementFinanceDeskColor_sm from './management/finance-desk-color-sm.webp'
+import managementFinanceDeskColor_lg from './management/finance-desk-color-lg.webp'
 import managementTenantDoorway_sm from './management/tenant-doorway-sm.webp'
 import managementTenantDoorway_lg from './management/tenant-doorway-lg.webp'
+import managementTenantDoorwayColor_sm from './management/tenant-doorway-color-sm.webp'
+import managementTenantDoorwayColor_lg from './management/tenant-doorway-color-lg.webp'
 import managementTenantHandshake_sm from './management/tenant-handshake-sm.webp'
 import managementTenantHandshake_lg from './management/tenant-handshake-lg.webp'
 import managementTenantWorkers_sm from './management/tenant-workers-sm.webp'
 import managementTenantWorkers_lg from './management/tenant-workers-lg.webp'
+import managementTenantWorkersColor_sm from './management/tenant-workers-color-sm.webp'
+import managementTenantWorkersColor_lg from './management/tenant-workers-color-lg.webp'
 import managementUpkeepFacade_sm from './management/upkeep-facade-sm.webp'
 import managementUpkeepFacade_lg from './management/upkeep-facade-lg.webp'
+import managementUpkeepFacadeColor_sm from './management/upkeep-facade-color-sm.webp'
+import managementUpkeepFacadeColor_lg from './management/upkeep-facade-color-lg.webp'
 import managementUpkeepPatio_sm from './management/upkeep-patio-sm.webp'
 import managementUpkeepPatio_lg from './management/upkeep-patio-lg.webp'
+import managementUpkeepPatioColor_sm from './management/upkeep-patio-color-sm.webp'
+import managementUpkeepPatioColor_lg from './management/upkeep-patio-color-lg.webp'
 import managementUpkeepRenovation_sm from './management/upkeep-renovation-sm.webp'
 import managementUpkeepRenovation_lg from './management/upkeep-renovation-lg.webp'
 import propertiesRelatedBrickManor_sm from './properties/related-brick-manor-sm.webp'
@@ -191,22 +215,34 @@ export const images = {
   heroResourcesHero: { src: heroResourcesHero_lg, srcSet: `${heroResourcesHero_sm} 800w, ${heroResourcesHero_lg} 1440w`, width: 1440, height: 1023 },
   heroResourcesHeroPortrait: { src: heroResourcesHeroPortrait_lg, srcSet: `${heroResourcesHeroPortrait_sm} 773w, ${heroResourcesHeroPortrait_lg} 1255w`, width: 1255, height: 1300 },
   investmentCommercialAdvisor: { src: investmentCommercialAdvisor_lg, srcSet: `${investmentCommercialAdvisor_sm} 480w, ${investmentCommercialAdvisor_lg} 552w`, width: 552, height: 828 },
+  investmentCommercialAdvisorColor: { src: investmentCommercialAdvisorColor_lg, srcSet: `${investmentCommercialAdvisorColor_sm} 480w, ${investmentCommercialAdvisorColor_lg} 552w`, width: 552, height: 828 },
   investmentCommercialBuilding: { src: investmentCommercialBuilding_lg, srcSet: `${investmentCommercialBuilding_sm} 480w, ${investmentCommercialBuilding_lg} 552w`, width: 552, height: 828 },
   investmentCommercialTicker: { src: investmentCommercialTicker_lg, srcSet: `${investmentCommercialTicker_sm} 480w, ${investmentCommercialTicker_lg} 828w`, width: 828, height: 621 },
+  investmentCommercialTickerColor: { src: investmentCommercialTickerColor_lg, srcSet: `${investmentCommercialTickerColor_sm} 480w, ${investmentCommercialTickerColor_lg} 828w`, width: 828, height: 621 },
   investmentDevelopmentMeeting: { src: investmentDevelopmentMeeting_lg, srcSet: `${investmentDevelopmentMeeting_sm} 480w, ${investmentDevelopmentMeeting_lg} 828w`, width: 828, height: 552 },
+  investmentDevelopmentMeetingColor: { src: investmentDevelopmentMeetingColor_lg, srcSet: `${investmentDevelopmentMeetingColor_sm} 480w, ${investmentDevelopmentMeetingColor_lg} 828w`, width: 828, height: 552 },
   investmentDevelopmentModelHouse: { src: investmentDevelopmentModelHouse_lg, srcSet: `${investmentDevelopmentModelHouse_sm} 480w, ${investmentDevelopmentModelHouse_lg} 828w`, width: 828, height: 552 },
+  investmentDevelopmentModelHouseColor: { src: investmentDevelopmentModelHouseColor_lg, srcSet: `${investmentDevelopmentModelHouseColor_sm} 480w, ${investmentDevelopmentModelHouseColor_lg} 828w`, width: 828, height: 552 },
   investmentDevelopmentTeam: { src: investmentDevelopmentTeam_lg, srcSet: `${investmentDevelopmentTeam_sm} 800w, ${investmentDevelopmentTeam_lg} 1617w`, width: 1617, height: 1078 },
   investmentInsightsChart: { src: investmentInsightsChart_lg, srcSet: `${investmentInsightsChart_sm} 480w, ${investmentInsightsChart_lg} 828w`, width: 828, height: 552 },
+  investmentInsightsChartColor: { src: investmentInsightsChartColor_lg, srcSet: `${investmentInsightsChartColor_sm} 480w, ${investmentInsightsChartColor_lg} 828w`, width: 828, height: 552 },
   investmentInsightsExecutive: { src: investmentInsightsExecutive_lg, srcSet: `${investmentInsightsExecutive_sm} 480w, ${investmentInsightsExecutive_lg} 827w`, width: 827, height: 551 },
+  investmentInsightsExecutiveColor: { src: investmentInsightsExecutiveColor_lg, srcSet: `${investmentInsightsExecutiveColor_sm} 480w, ${investmentInsightsExecutiveColor_lg} 827w`, width: 827, height: 551 },
   investmentInsightsMeeting: { src: investmentInsightsMeeting_lg, srcSet: `${investmentInsightsMeeting_sm} 480w, ${investmentInsightsMeeting_lg} 828w`, width: 828, height: 552 },
   managementFinanceBridge: { src: managementFinanceBridge_lg, srcSet: `${managementFinanceBridge_sm} 480w, ${managementFinanceBridge_lg} 565w`, width: 565, height: 827 },
+  managementFinanceBridgeColor: { src: managementFinanceBridgeColor_lg, srcSet: `${managementFinanceBridgeColor_sm} 480w, ${managementFinanceBridgeColor_lg} 565w`, width: 565, height: 827 },
   managementFinanceCall: { src: managementFinanceCall_lg, srcSet: `${managementFinanceCall_sm} 480w, ${managementFinanceCall_lg} 635w`, width: 635, height: 827 },
   managementFinanceDesk: { src: managementFinanceDesk_lg, srcSet: `${managementFinanceDesk_sm} 480w, ${managementFinanceDesk_lg} 828w`, width: 828, height: 552 },
+  managementFinanceDeskColor: { src: managementFinanceDeskColor_lg, srcSet: `${managementFinanceDeskColor_sm} 480w, ${managementFinanceDeskColor_lg} 828w`, width: 828, height: 552 },
   managementTenantDoorway: { src: managementTenantDoorway_lg, srcSet: `${managementTenantDoorway_sm} 480w, ${managementTenantDoorway_lg} 552w`, width: 552, height: 828 },
+  managementTenantDoorwayColor: { src: managementTenantDoorwayColor_lg, srcSet: `${managementTenantDoorwayColor_sm} 480w, ${managementTenantDoorwayColor_lg} 552w`, width: 552, height: 828 },
   managementTenantHandshake: { src: managementTenantHandshake_lg, srcSet: `${managementTenantHandshake_sm} 800w, ${managementTenantHandshake_lg} 1618w`, width: 1618, height: 1080 },
   managementTenantWorkers: { src: managementTenantWorkers_lg, srcSet: `${managementTenantWorkers_sm} 480w, ${managementTenantWorkers_lg} 621w`, width: 621, height: 828 },
+  managementTenantWorkersColor: { src: managementTenantWorkersColor_lg, srcSet: `${managementTenantWorkersColor_sm} 480w, ${managementTenantWorkersColor_lg} 621w`, width: 621, height: 828 },
   managementUpkeepFacade: { src: managementUpkeepFacade_lg, srcSet: `${managementUpkeepFacade_sm} 466w, ${managementUpkeepFacade_lg} 466w`, width: 466, height: 828 },
+  managementUpkeepFacadeColor: { src: managementUpkeepFacadeColor_lg, srcSet: `${managementUpkeepFacadeColor_sm} 466w, ${managementUpkeepFacadeColor_lg} 466w`, width: 466, height: 828 },
   managementUpkeepPatio: { src: managementUpkeepPatio_lg, srcSet: `${managementUpkeepPatio_sm} 480w, ${managementUpkeepPatio_lg} 552w`, width: 552, height: 828 },
+  managementUpkeepPatioColor: { src: managementUpkeepPatioColor_lg, srcSet: `${managementUpkeepPatioColor_sm} 480w, ${managementUpkeepPatioColor_lg} 552w`, width: 552, height: 828 },
   managementUpkeepRenovation: { src: managementUpkeepRenovation_lg, srcSet: `${managementUpkeepRenovation_sm} 480w, ${managementUpkeepRenovation_lg} 827w`, width: 827, height: 550 },
   propertiesRelatedBrickManor: { src: propertiesRelatedBrickManor_lg, srcSet: `${propertiesRelatedBrickManor_sm} 800w, ${propertiesRelatedBrickManor_lg} 841w`, width: 841, height: 1262 },
   propertiesRelatedCabinFire: { src: propertiesRelatedCabinFire_lg, srcSet: `${propertiesRelatedCabinFire_sm} 800w, ${propertiesRelatedCabinFire_lg} 1262w`, width: 1262, height: 841 },

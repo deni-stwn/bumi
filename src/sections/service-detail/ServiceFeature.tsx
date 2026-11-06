@@ -1,7 +1,8 @@
-import { useId } from 'react'
+import { useId, useState } from 'react'
 import { Container } from '@/components/layout/Container'
 import { cn } from '@/lib/cn'
 import type { ServiceFeature as Feature, ServicePhoto } from '@/data/serviceDetails'
+import { ActivePhoto } from './ActivePhoto'
 import type { FeatureLayout } from './serviceLayouts'
 
 // Photos sit in 414 px tall boxes (200 px on mobile) that crop them hard, so even the narrow ones
@@ -12,6 +13,9 @@ const photoSizes = '(min-width: 768px) 640px, 320px'
  * Three photos 20 px apart: on mobile a 200 px square and two strips sharing the rest; from tablet a
  * wide photo and two strips of 99 / 98 px, 414 px tall. Rounded only on desktop (the radius variable
  * resolves to 0 in the other frames, design-notes G17); `framed` adds the Gray/200 inside stroke.
+ * The wide photo is the active one, in colour: hovering another photo makes it the active one (it
+ * widens and turns to colour, the others narrow to strips in black and white), and leaving the row
+ * brings back the first (revision, design-notes SV13).
  */
 function Gallery({
   photos,
@@ -22,33 +26,28 @@ function Gallery({
   framed: boolean
   className?: string
 }) {
+  const [active, setActive] = useState(0)
   return (
     <div
       data-reveal="stagger"
+      onPointerLeave={() => setActive(0)}
       className={cn('flex h-50 gap-5 md:h-103.5 lg:max-w-143 lg:min-w-0 lg:flex-1', className)}
     >
-      {photos.map(({ image, alt }, i) => (
+      {photos.map((photo, i) => (
         <div
-          key={image.src}
+          key={photo.image.src}
+          onPointerEnter={() => setActive(i)}
           className={cn(
-            'relative overflow-hidden lg:rounded-corner-l',
-            i === 0
-              ? 'w-50 shrink-0 md:w-auto md:min-w-0 md:flex-1'
-              : 'min-w-0 flex-1 md:flex-none',
-            i === 1 && 'md:w-24.75',
-            i === 2 && 'md:w-24.5',
+            'relative min-w-0 overflow-hidden transition-[flex-grow,flex-basis] duration-500 ease-house-out lg:rounded-corner-l',
+            // Grow and basis only, so the swap animates: the active photo takes the room the
+            // strips leave (200 px on mobile), the strips keep 99 / 98 px from tablet.
+            i === active
+              ? 'shrink-0 grow-0 basis-50 md:shrink md:grow'
+              : 'grow basis-0 md:shrink-0 md:grow-0',
+            i === 2 ? 'md:basis-24.5' : 'md:basis-24.75',
           )}
         >
-          <img
-            src={image.src}
-            srcSet={image.srcSet}
-            sizes={photoSizes}
-            width={image.width}
-            height={image.height}
-            alt={alt}
-            loading="lazy"
-            className="size-full object-cover"
-          />
+          <ActivePhoto photo={photo} active={i === active} sizes={photoSizes} />
           {framed && (
             <span
               aria-hidden="true"

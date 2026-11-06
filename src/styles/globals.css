@@ -80,6 +80,18 @@
   --ease-house-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* Service highlight cards: a caption that moves to another card position fades in once the card has
+   resized (revision, design-notes SV13). */
+@theme {
+  --animate-caption-in: caption-in 0.35s var(--ease-house-out) 0.3s both;
+  @keyframes caption-in {
+    from {
+      opacity: 0;
+      transform: translateY(0.5rem);
+    }
+  }
+}
+
 @layer base {
   html {
     /* FigCraft breaks a word that is wider than its text box ("managemen / t?"); browsers would let

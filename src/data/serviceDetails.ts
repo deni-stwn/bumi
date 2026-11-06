@@ -1,6 +1,10 @@
 import { images, type ImageAsset } from '@/assets/images'
 
-export type ServicePhoto = { image: ImageAsset; alt: string }
+/**
+ * A photo as designed (`image`; black and white ones have the filter baked in) and, for those, the
+ * unfiltered colour original shown while it is the active photo (hover, design-notes SV13).
+ */
+export type ServicePhoto = { image: ImageAsset; color?: ImageAsset; alt: string }
 
 /** Text, three bullet points and three photos ("Section Content" / "Frame" blocks). */
 export type ServiceFeature = {
@@ -39,26 +43,32 @@ export type ServiceDetail = {
 // Photos that appear on more than one service page (same image and filters in the design).
 const patio: ServicePhoto = {
   image: images.managementUpkeepPatio,
+  color: images.managementUpkeepPatioColor,
   alt: 'A covered patio with outdoor seating',
 }
 const facade: ServicePhoto = {
   image: images.managementUpkeepFacade,
+  color: images.managementUpkeepFacadeColor,
   alt: 'An apartment block lined with air-conditioning units',
 }
 const doorway: ServicePhoto = {
   image: images.managementTenantDoorway,
+  color: images.managementTenantDoorwayColor,
   alt: 'An older man welcoming someone at his front door',
 }
 const workers: ServicePhoto = {
   image: images.managementTenantWorkers,
+  color: images.managementTenantWorkersColor,
   alt: 'Two contractors in hard hats repairing a timber wall',
 }
 const bridge: ServicePhoto = {
   image: images.managementFinanceBridge,
+  color: images.managementFinanceBridgeColor,
   alt: 'A suspension bridge over a rocky shore',
 }
 const desk: ServicePhoto = {
   image: images.managementFinanceDesk,
+  color: images.managementFinanceDeskColor,
   alt: 'A desk with a laptop, a tablet and a pair of glasses',
 }
 
@@ -163,9 +173,14 @@ export const serviceDetails: Record<string, ServiceDetail> = {
             image: images.investmentCommercialBuilding,
             alt: 'A modern office building with a glass and stone facade',
           },
-          { image: images.investmentCommercialTicker, alt: 'Screens full of stock market charts' },
+          {
+            image: images.investmentCommercialTicker,
+            color: images.investmentCommercialTickerColor,
+            alt: 'Screens full of stock market charts',
+          },
           {
             image: images.investmentCommercialAdvisor,
+            color: images.investmentCommercialAdvisorColor,
             alt: 'A smiling young man in a suit and tie',
           },
         ],
@@ -186,9 +201,14 @@ export const serviceDetails: Record<string, ServiceDetail> = {
           },
           {
             image: images.investmentInsightsExecutive,
+            color: images.investmentInsightsExecutiveColor,
             alt: 'A man in a suit buttoning his jacket on a staircase',
           },
-          { image: images.investmentInsightsChart, alt: 'A price chart on a laptop screen' },
+          {
+            image: images.investmentInsightsChart,
+            color: images.investmentInsightsChartColor,
+            alt: 'A price chart on a laptop screen',
+          },
         ],
       },
     ],
@@ -208,6 +228,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
           label: 'Insights into high-potential development areas',
           photo: {
             image: images.investmentDevelopmentModelHouse,
+            color: images.investmentDevelopmentModelHouseColor,
             alt: 'A small model house resting on an open hand',
           },
         },
@@ -215,6 +236,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
           label: 'Collaboration with leading developers',
           photo: {
             image: images.investmentDevelopmentMeeting,
+            color: images.investmentDevelopmentMeetingColor,
             alt: 'A team meeting around a table with laptops',
           },
         },
