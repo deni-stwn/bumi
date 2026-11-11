@@ -4,7 +4,8 @@ import { TextField } from '@/components/ui/TextField'
 import { cn } from '@/lib/cn'
 import { searchFields as fields, useSearchSubmit } from './searchFields'
 
-const capsule = 'rounded-full backdrop-blur-search'
+// No background blur (client revision, design-notes G31).
+const capsule = 'rounded-full'
 const rule = <span aria-hidden="true" className="h-17.5 w-px shrink-0 bg-white-variable-60" />
 
 /**

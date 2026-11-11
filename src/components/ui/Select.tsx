@@ -92,7 +92,7 @@ export function Select({
       </label>
       <div
         className={cn(
-          'relative flex items-start justify-between gap-2.5 backdrop-blur-xl has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-current',
+          'relative flex items-start justify-between gap-2.5 has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-current',
           s.field,
           underline && t.line,
           t[size].value,

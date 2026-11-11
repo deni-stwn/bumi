@@ -64,16 +64,6 @@
   --color-default-stroke: #d9d9d9;
 }
 
-/* Search capsule on hero photos: background blur 34 in FigCraft = CSS blur(17px). */
-@theme {
-  --blur-search: 17px;
-}
-
-/* Effect on the Home testimonials frame (drop shadow 0 4 blur 4, black 25 %), not an effect style. */
-@theme {
-  --drop-shadow-section: 0 4px 4px rgb(0 0 0 / 0.25);
-}
-
 /* Motion tokens (bukan dari desain): kurva yang sama dengan GSAP di src/lib/motion.ts. */
 @theme {
   --ease-house: cubic-bezier(0.76, 0, 0.24, 1);

@@ -57,15 +57,16 @@ function Story({ story, active }: { story: Testimonial; active: boolean }) {
 }
 
 /**
- * "Stories of Trust, Growth, and Shared Success": testimonial carousel. Desktop draws the whole
- * section with a 0 4 4 drop shadow; on tablet the heading touches the cards (row gap 0 in the design).
+ * "Stories of Trust, Growth, and Shared Success": testimonial carousel. On tablet the heading touches
+ * the cards (row gap 0 in the design). The design's 0 4 4 drop shadow on the desktop section is
+ * removed (client revision, design-notes H17).
  */
 export function Stories() {
   const titleId = useId()
   const { track, index, go, prev, next } = useCarousel<HTMLUListElement>(testimonials.length)
   return (
     <section aria-labelledby={titleId} aria-roledescription="carousel">
-      <Container className="flex flex-col items-start gap-25 py-25 md:max-lg:gap-0 lg:drop-shadow-section">
+      <Container className="flex flex-col items-start gap-25 py-25 md:max-lg:gap-0">
         <div className="flex w-full items-end justify-between gap-10">
           <h2
             id={titleId}

@@ -4,10 +4,11 @@ import { SearchIcon } from '@/components/icons/SearchIcon'
 import { Button } from '@/components/ui/Button'
 import { Select } from '@/components/ui/Select'
 import { TextField } from '@/components/ui/TextField'
-import { searchFields, useSearchSubmit } from '@/sections/shared/searchFields'
+import { fieldDefault, searchFields, useSearchSubmit } from '@/sections/shared/searchFields'
 import { cn } from '@/lib/cn'
 
-const capsule = 'rounded-full backdrop-blur-search'
+// No background blur (client revision, design-notes G31).
+const capsule = 'rounded-full'
 
 function Fields({ size, defaults }: { size: 'lg' | 'md'; defaults: URLSearchParams }) {
   return searchFields.map((f) => (
@@ -18,7 +19,7 @@ function Fields({ size, defaults }: { size: 'lg' | 'md'; defaults: URLSearchPara
       size={size}
       underline={false}
       options={f.options}
-      defaultValue={defaults.get(f.name) ?? undefined}
+      defaultValue={fieldDefault(f, defaults)}
       className="min-w-0 flex-1"
     />
   ))
@@ -51,7 +52,7 @@ export function ResultsSearch({ params }: { params: URLSearchParams }) {
                 label={f.label}
                 underline={false}
                 options={f.options}
-                defaultValue={params.get(f.name) ?? undefined}
+                defaultValue={fieldDefault(f, params)}
                 className="max-w-62.5 min-w-0 flex-1"
               />
               {rule}

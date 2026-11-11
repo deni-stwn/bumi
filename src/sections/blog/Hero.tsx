@@ -9,8 +9,8 @@ type HeroProps = { onSearch: (query: string) => void }
 
 /**
  * A 967 px photo under black 30 % with the title (Header/MD, Header/SM on mobile) from y 344 on
- * desktop and 168 below, and the search capsule 25 px above the bottom. The capsule is the hero
- * photo's blurred backdrop with a white underlined field ("Search Anything", Body/MD) and a 72 px
+ * desktop and 168 below, and the search capsule 25 px above the bottom. The capsule (no background
+ * blur since the client revision, design-notes G31) holds a white underlined field ("Search Anything", Body/MD) and a 72 px
  * white button; desktop pins the 1143 px field to the left and the button to the right end.
  */
 export function Hero({ onSearch }: HeroProps) {
@@ -53,7 +53,7 @@ export function Hero({ onSearch }: HeroProps) {
         >
           <form
             onSubmit={submit}
-            className="flex items-center rounded-full py-4 backdrop-blur-search lg:justify-between lg:gap-12"
+            className="flex items-center rounded-full py-4 lg:justify-between lg:gap-12"
           >
             <label htmlFor={inputId} className="sr-only">
               Search articles

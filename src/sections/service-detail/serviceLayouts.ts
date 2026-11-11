@@ -72,7 +72,7 @@ export const serviceLayouts: Record<string, ServiceLayout> = {
       block: 'xl:mx-auto xl:max-w-289.5',
       description: 'w-72.5',
     },
-    featureLead: 'first:text-body-xs-bold',
+    featureLead: 'text-body-xs-bold',
     features: [{}, {}],
     highlight: {
       text: '',
@@ -113,7 +113,7 @@ export const serviceLayouts: Record<string, ServiceLayout> = {
       block: 'xl:ml-auto xl:max-w-311.25',
       description: 'w-94.25',
     },
-    featureLead: 'first:text-body-xs-bold',
+    featureLead: 'text-body-xs-bold',
     features: [{}, {}],
     highlight: {
       text: '',
@@ -156,7 +156,7 @@ export const serviceLayouts: Record<string, ServiceLayout> = {
       block: 'gap-27 xl:ml-auto xl:max-w-311.25',
       description: 'w-94.25',
     },
-    featureLead: 'first:text-body-xs-semibold',
+    featureLead: 'text-body-xs-semibold',
     // The first block is 582 px wide on tablet, its photos 572 (design-notes RC3).
     features: [{ text: 'md:max-lg:w-145.5', gallery: 'md:max-lg:w-143' }, {}],
     highlight: {

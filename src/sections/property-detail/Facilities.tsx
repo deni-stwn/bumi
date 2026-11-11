@@ -31,7 +31,8 @@ function Item({ facility }: { facility: Facility }) {
 
 /**
  * "Easy Access to public Fasility": three columns between Gray/200 side rules on desktop, one ruled
- * column on tablet and mobile.
+ * column on tablet and mobile. Desktop columns touch, so neighbouring rules overlap into a single
+ * line (the design's 48 px gap drew them double; client revision, design-notes D9).
  */
 export function Facilities() {
   const titleId = useId()
@@ -46,7 +47,7 @@ export function Facilities() {
       </h2>
       <div
         data-reveal="up"
-        className="flex flex-col gap-12 max-lg:line-x-gray-200 lg:grid lg:grid-cols-3"
+        className="flex flex-col gap-12 max-lg:line-x-gray-200 lg:grid lg:grid-cols-3 lg:gap-0"
       >
         {facilityColumns.map((column, i) => (
           <ul key={i} className="flex flex-col gap-12 px-6 lg:line-x-gray-200 lg:not-first:-ml-px">

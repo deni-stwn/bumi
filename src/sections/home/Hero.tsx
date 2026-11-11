@@ -10,6 +10,7 @@ const {
 /**
  * Hero: the photo is cropped per frame in the design (425×965, 768×994, 1440×1864), so each width
  * gets its own crop. Heading and search sit at the frame offsets (20 / 83 / 120 px from the left).
+ * The photo scrolls slower than the content (parallax, client revision 11 Nov 2026).
  */
 export function Hero() {
   return (
@@ -25,6 +26,7 @@ export function Hero() {
           height={mobile.height}
           alt=""
           fetchPriority="high"
+          data-parallax="0.3"
           className="absolute inset-0 -z-10 size-full object-cover"
         />
       </picture>

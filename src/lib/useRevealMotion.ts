@@ -14,6 +14,9 @@ import { gsap, MOTION_QUERY, ScrollTrigger, SplitText, useGSAP } from './motion'
  * - `wordmark` the child slides up from behind the element's lower edge (footer logo).
  * - `drive`   glides in from the left and settles (a hero object such as a product shot).
  *
+ * Separately, `data-parallax="0.3"` (a background photo) drifts down at that fraction of the scroll
+ * while its section passes; the section clips it.
+ *
  * Optional `data-reveal-delay="0.2"` adds seconds. Elements already in view on load play in DOM
  * order as the intro sequence. A reveal nested inside an `up` or `stagger` element is skipped, so a
  * block never animates twice (except `count` and `bars`, which don't fade the element itself).
@@ -216,6 +219,25 @@ export function useRevealMotion(routeKey: string) {
               break
             }
           }
+        }
+
+        // Parallax: `data-parallax="0.3"` moves the element down by that fraction of the scroll while
+        // its section passes. Tied straight to the scroll (no smoothing), so it never lags behind.
+        for (const el of document.querySelectorAll<HTMLElement>('[data-parallax]')) {
+          const section = el.closest('section') ?? el.parentElement
+          if (!section) continue
+          const speed = Number(el.dataset.parallax) || 0.3
+          gsap.to(el, {
+            y: () => section.offsetHeight * speed,
+            ease: 'none',
+            scrollTrigger: {
+              trigger: section,
+              start: 'top top',
+              end: 'bottom top',
+              scrub: true,
+              invalidateOnRefresh: true,
+            },
+          })
         }
 
         // Images and fonts settle after setup; measure trigger positions again once they have.
