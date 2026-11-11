@@ -54,10 +54,10 @@ export function CtaBanner({
         variant="fill"
         size="md"
         iconRight={<ArrowUpRightCircleIcon />}
-        className={cn(
-          'absolute top-1/2 left-1/2 -translate-1/2 lg:h-18 lg:gap-2 lg:p-6',
-          buttonClassName,
-        )}
+        // Centred with inset 0 + auto margins, not a CSS translate: GSAP owns the transform while the
+        // button follows the pointer, and would drop a translate centring (the button then came back
+        // half its width off-centre).
+        className={cn('absolute inset-0 m-auto w-fit lg:h-18 lg:gap-2 lg:p-6', buttonClassName)}
       >
         {cta}
       </ButtonLink>

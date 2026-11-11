@@ -29,7 +29,7 @@ export default function HomePage() {
         to="/contact"
         // Home: 123 px padding on tablet/mobile; the desktop button sits at x 594 of 1440 (design-notes H13).
         className="py-30.75"
-        buttonClassName="lg:left-[41.25%] lg:translate-x-0"
+        buttonClassName="lg:right-auto lg:left-[41.25%] lg:ml-0"
       />
     </>
   )
